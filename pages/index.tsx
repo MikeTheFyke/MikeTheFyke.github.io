@@ -15,7 +15,7 @@ const Homepage = () => {
 				<MobileNav nav={nav} closeNav={closeNav} />
 				<Nav openNav={openNav} />
 				<Hero />
-				<div className="realtive z-[30]">
+				<div className="relative z-[30]">
 					<About />
 				</div>
 			</div>
