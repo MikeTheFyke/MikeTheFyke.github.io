@@ -2,6 +2,7 @@ import React from "react";
 import Particle from "./Particle";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
+import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 
 const Hero = () => {
 	return (
@@ -13,12 +14,18 @@ const Hero = () => {
 						Hey Hey! <span className="text-red-500">It's me Mike!</span>
 					</h1>
 					<TextEffect />
-					<p className="mt-[2rem] text-[20px] text-[#ffffff92]">
+					<p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
 						An artistically trained full stack web developer, passionate in creating a unique user experience within the web environment. A
 						quick learner when adapting to new languages and technologies, with a team-conscious approach.
 					</p>
+					<div className="mt-[2rem] flex-col space-y-6 sm:space-y-o sm:flex sm:flex-row items-center sm:space-x-6">
+						<button className="px-[2rem] hover:bg-red-500 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
+							<p>Download CV</p>
+							<ArrowDownTrayIcon className="w-[1.6rem] h[1.7rem] text-black" />
+						</button>
+					</div>
 				</div>
-				<div className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px]">
+				<div className="w-[500px] hidden relative lg:flex items-center rounded-full h-[500px]">
 					<Image src="/images/mikeFykeAvatar.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
 				</div>
 			</div>
