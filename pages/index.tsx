@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Nav from "@/Components/Nav";
 import MobileNav from "@/Components/MobileNav";
+import Hero from "@/Components/Hero";
 
 const Homepage = () => {
 	const [nav, setNav] = useState(false);
@@ -12,6 +13,7 @@ const Homepage = () => {
 			<div>
 				<MobileNav nav={nav} closeNav={closeNav} />
 				<Nav openNav={openNav} />
+				<Hero />
 			</div>
 		</div>
 	);
