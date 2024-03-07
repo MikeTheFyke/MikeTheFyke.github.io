@@ -3,6 +3,8 @@ import Nav from "@/Components/Nav";
 import MobileNav from "@/Components/MobileNav";
 import Hero from "@/Components/Hero";
 import About from "@/Components/About";
+import Experience from "@/Components/Experience";
+import Skills from "@/Components/Skills";
 
 const Homepage = () => {
 	const [nav, setNav] = useState(false);
@@ -17,6 +19,8 @@ const Homepage = () => {
 				<Hero />
 				<div className="relative z-[30]">
 					<About />
+					<Experience />
+					<Skills />
 				</div>
 			</div>
 		</div>
