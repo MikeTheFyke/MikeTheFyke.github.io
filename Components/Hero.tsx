@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Particle from "./Particle";
 import TextEffect from "./TextEffect";
@@ -25,7 +26,7 @@ const Hero = () => {
 						</button>
 					</div>
 				</div>
-				<div className="w-[500px] hidden relative lg:flex items-center rounded-full h-[500px]">
+				<div data-aos="zoom-in" className="w-[500px] hidden relative lg:flex items-center rounded-full h-[500px]">
 					<Image src="/images/mikeFykeAvatar.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
 				</div>
 			</div>
