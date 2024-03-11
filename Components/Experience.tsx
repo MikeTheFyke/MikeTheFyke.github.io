@@ -3,7 +3,7 @@ import React from "react";
 
 const Experience = () => {
 	return (
-		<div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]">
+		<div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]" id="Experience">
 			<p className="heading">
 				My <span className="text-red-500">Experience</span>
 			</p>
