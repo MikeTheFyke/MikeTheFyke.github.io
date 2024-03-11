@@ -33,11 +33,6 @@ const Projects = () => {
 						<Image src="/images/Tweeter-Main.png" alt="portfolio" layout="fill" className="object-contain" />
 					</div>
 				</div>
-				<div data-aos="fade-up" data-aos-delay="1500">
-					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px] bg-[#FFFFFF]">
-						<Image src="/images/ChatterBox-Main.png" alt="portfolio" layout="fill" className="object-contain" />
-					</div>
-				</div>
 			</div>
 		</div>
 	);
