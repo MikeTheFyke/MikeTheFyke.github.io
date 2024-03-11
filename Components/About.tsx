@@ -18,14 +18,14 @@ const About = () => {
 							A quick learner when adapting to new languages and technologies, with a team-conscious approach.
 						</p>
 					</div>
-					<button className="px-[2rem] hover:bg-red-500 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
+					{/* <button className="px-[2rem] hover:bg-red-500 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
 						<p>Download CV</p>
 						<ArrowDownTrayIcon className="w-[1.6rem] h[1.7rem] text-black" />
-					</button>
+					</button> */}
 				</div>
 				<div data-aos="fade-left" className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">
 					<Image
-						src="/images/mikeFykeAvatar.jpeg"
+						src="/images/MikeFyke-Gen02.jpeg"
 						alt="user"
 						layout="fill"
 						objectFit="contain"
