@@ -10,14 +10,10 @@ const Skills = () => {
 			</h1>
 			<div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
 				<div>
-					<SkillsItem title="React Developer" year="2014 - 2018" />
-					<SkillsItem title="Next Js Developer" year="2014 - 2018" />
-					<SkillsLanguage skill1="html" skill2="css" skill3="javascript" level1="w-[91%]" level2="w-[88%]" level3="w-[80%]" />
+					<SkillsItem title="Lighthouse Labs" year="2019" description="Fullstack Web Development bootcamp." />
 				</div>
 				<div>
-					<SkillsItem title="React Developer" year="2014 - 2018" />
-					<SkillsItem title="Next Js Developer" year="2014 - 2018" />
-					<SkillsLanguage skill1="html" skill2="css" skill3="javascript" level1="w-[91%]" level2="w-[88%]" level3="w-[80%]" />
+					<SkillsItem title="Sheridan College" year="2007 - 2009" description="Visual & creative Arts (Advanced Diploma)" />
 				</div>
 			</div>
 		</div>
