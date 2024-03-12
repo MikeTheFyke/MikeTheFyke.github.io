@@ -8,10 +8,10 @@ const Experience = () => {
 			<p className="heading">
 				My <span className="text-red-500">Experience</span>
 			</p>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
+			<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
 				<div data-aos="fade-right">
 					<div className="bg-green-600 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
-						<Image src="/images/123Loadboard.png" alt="portfolio" layout="fill" className="w-[6rem] h-[6rem] mx-auto " />
+						<Image src="/images/123Loadboard.png" alt="companyAvatar" className="w-[6rem] h-[6rem] mx-auto " />
 						{/* <Image className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" /> */}
 						<h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">123Loadboard</h1>
 						<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] mb-[1.5rem]">April 2021 - January 2024</h1>
