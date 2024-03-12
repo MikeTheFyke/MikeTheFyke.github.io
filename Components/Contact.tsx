@@ -1,7 +1,13 @@
 import { DevicePhoneMobileIcon, EnvelopeIcon, MapIcon } from "@heroicons/react/20/solid";
 import React from "react";
+import Image from "next/image";
 
 const Contact = () => {
+	const openNewTab = (url: string): void => {
+		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+		if (newWindow) newWindow.opener = null;
+	};
+
 	return (
 		<div className="pt-[8rem] pb-[4rem] bg-[#141c27]" id="Contact">
 			<div className="grid pb-[6rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[90%] mx-auto gap-[3rem]">
@@ -38,9 +44,26 @@ const Contact = () => {
 			<div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between">
 				<div className="text-[16px] mb-[2rem] md:mb-0 text-white opacity-20">Mike Fyke 2024 | All Rights Reserved</div>
 				<div className="flex items-center space-x-10">
-					<p className="text-[16px] text-white opacity-20">Terms & Conditions</p>
-					<p className="text-[16px] text-white opacity-20">Privacy Policy</p>
-					<p className="text-[16px] text-white opacity-20">Sitemap</p>
+					<div onClick={() => openNewTab("htts://www.github.com/Mike-The-Fyke")}>
+						<Image
+							src={"/images/GithubAvatar.png"}
+							alt={"github"}
+							width={100}
+							height={100}
+							objectFit="contain"
+							className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF]"
+						/>
+					</div>
+					<div onClick={() => openNewTab("https://www.linkedin.com/in/mike-fyke-5b4a5aa0/")}>
+						<Image
+							src={"/images/LinkedinAvatar.png"}
+							alt={"linkedin"}
+							width={100}
+							height={100}
+							objectFit="contain"
+							className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF]"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
