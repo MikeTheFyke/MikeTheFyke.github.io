@@ -14,8 +14,7 @@ const About = () => {
 					<div className="mb-[3rem] flex items-center md:space-x-10">
 						<span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
 						<p className="text-[19px] text-slate-300 w-[80%]">
-							An artistically trained full stack web developer, passionate in creating a unique user experience within the web environment.
-							A quick learner when adapting to new languages and technologies, with a team-conscious approach.
+							Make users feel like they are experiencing a website instead of just viewing it, with micro-interactions.
 						</p>
 					</div>
 					{/* <button className="px-[2rem] hover:bg-red-500 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
