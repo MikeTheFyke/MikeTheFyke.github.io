@@ -1,5 +1,6 @@
 import { CodeBracketSquareIcon, CommandLineIcon, RocketLaunchIcon } from "@heroicons/react/20/solid";
 import React from "react";
+import Image from "next/image";
 
 const Experience = () => {
 	return (
@@ -9,8 +10,9 @@ const Experience = () => {
 			</p>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
 				<div data-aos="fade-right">
-					<div className="bg-orange-500 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
-						<CodeBracketSquareIcon className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
+					<div className="bg-green-600 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
+						<Image src="/images/123Loadboard.png" alt="portfolio" layout="fill" className="object-contain" />
+						{/* <Image className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" /> */}
 						<h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">123Loadboard</h1>
 						<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] mb-[1.5rem]">April 2021 - January 2024</h1>
 						<p className="text-[15px] text-[#e8e7e7] font-normal">
@@ -19,7 +21,7 @@ const Experience = () => {
 						</p>
 					</div>
 				</div>
-				<div data-aos="zoom-in" data-aos-delay="300">
+				{/* <div data-aos="zoom-in" data-aos-delay="300">
 					<div className="bg-green-600 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
 						<RocketLaunchIcon className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
 						<h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">123Loadboard</h1>
@@ -29,8 +31,8 @@ const Experience = () => {
 							Built an internal integration portal and took part in customer meet ups.
 						</p>
 					</div>
-				</div>
-				<div data-aos="fade-left" data-aos-delay="500">
+				</div> */}
+				{/* <div data-aos="fade-left" data-aos-delay="500">
 					<div className="bg-yellow-500 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold text-center p-[2rem]">
 						<CommandLineIcon className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" />
 						<h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">123Loadboard</h1>
@@ -40,7 +42,7 @@ const Experience = () => {
 							Built an internal integration portal and took part in customer meet ups.
 						</p>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

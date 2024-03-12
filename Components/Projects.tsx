@@ -15,9 +15,9 @@ const Projects = () => {
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image src="/images/BetterBytes-Main.jpeg" alt="portfolio" layout="fill" className="object-contain" />
 					</div>
-					<p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80">
+					<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold">
 						NodJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex, Cheerio, Bootstrap
-					</p>
+					</h1>
 				</div>
 				<div data-aos="fade-up" data-aos-delay="300" className="hover:-translate-y-6">
 					<h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white text-center">
@@ -26,7 +26,7 @@ const Projects = () => {
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image src="/images/OwlSite-Main.png" alt="portfolio" layout="fill" className="object-contain" />
 					</div>
-					<p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80">Vue, GSAP, Express, MongoDB</p>
+					<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold">Vue, GSAP, Express, MongoDB</h1>
 				</div>
 				<div data-aos="fade-up" data-aos-delay="600" className="hover:-translate-y-6">
 					<h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white text-center">
@@ -35,7 +35,7 @@ const Projects = () => {
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image src="/images/ShrinkALink-Main.png" alt="portfolio" layout="fill" className="object-contain" />
 					</div>
-					<p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80">NodeJs, Express, EJS, JQuery, Bootstrap</p>
+					<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold">NodeJs, Express, EJS, JQuery, Bootstrap</h1>
 				</div>
 				<div data-aos="fade-up" data-aos-delay="900" className="hover:-translate-y-6">
 					<h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white text-center">
@@ -44,7 +44,9 @@ const Projects = () => {
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image src="/images/ChatterBox-Main.png" alt="portfolio" layout="fill" className="object-contain" />
 					</div>
-					<p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80">NodeJs, React, React-dom, Express, Webpack</p>
+					<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+						NodeJs, React, React-dom, Express, Webpack
+					</h1>
 				</div>
 				<div data-aos="fade-up" data-aos-delay="1200" className="hover:-translate-y-6">
 					<h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white text-center">
@@ -53,7 +55,7 @@ const Projects = () => {
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image src="/images/Tweeter-Main.png" alt="portfolio" layout="fill" className="object-contain" />
 					</div>
-					<p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80">HTML, CSS, JQuery, Express, MongoDB</p>
+					<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold">HTML, CSS, JQuery, Express, MongoDB</h1>
 				</div>
 			</div>
 		</div>
