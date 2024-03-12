@@ -48,20 +48,20 @@ const Contact = () => {
 						<Image
 							src={"/images/GithubAvatar.png"}
 							alt={"github"}
-							width={100}
-							height={100}
+							width={50}
+							height={50}
 							objectFit="contain"
-							className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF]"
+							className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer"
 						/>
 					</div>
 					<div onClick={() => openNewTab("https://www.linkedin.com/in/mike-fyke-5b4a5aa0/")}>
 						<Image
 							src={"/images/LinkedinAvatar.png"}
 							alt={"linkedin"}
-							width={100}
-							height={100}
+							width={50}
+							height={50}
 							objectFit="contain"
-							className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF]"
+							className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer"
 						/>
 					</div>
 				</div>
