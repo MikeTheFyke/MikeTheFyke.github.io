@@ -33,9 +33,18 @@ const ReviewSlider = () => {
 			responsive={responsive}
 			itemClass="item"
 		>
-			<EmployerReview image="/images/mikeFykeAvatar.jpeg" name="Mike Fyke" role="Employer" />
-			<EmployerReview image="/images/MaxwellBentley.png" name="Maxwell Bentley" role="Employer" />
-			<EmployerReview image="/images/Avatar.png" name="Mikith Fykith" role="Employer" />
+			<EmployerReview
+				image="/images/DianaAvatar.png"
+				name="Diana Metzen"
+				role="Scrum Master / 123Loadboard"
+				review="MIke consistenly demonstrated outstanding proficiency in front-end development, creating visually appealing, user-friendly and reactive interfaces that significantly enhanced our products. His ability to collaborate with cross-functional teams and understanding end-user' needs played a critical role in the success of several high profile projects."
+			/>
+			<EmployerReview
+				image="/images/BernardAvatar.png"
+				name="Bernard Poulin"
+				role="Tech Lead / 123Loadboard"
+				review="Mike not only adapted quickley to out projects but showcased an exceptional dedication and willingness to take on challenges and his commitment to going the extra mile were consistently evident. He has proven himself as a reliable and dedicated professional with the potential to continue making significant contributions."
+			/>
 		</Carousel>
 	);
 };
