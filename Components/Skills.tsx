@@ -16,8 +16,23 @@ const Skills = () => {
 					<SkillsItem title="Sheridan College" year="2007 - 2009" description="Visual & creative Arts (Advanced Diploma)" />
 				</div>
 			</div>
-			<SkillsLanguage skills="NodeJs, HTML, CSS, Javascript, JQuery, Express, Cheerio, Axios, React, Ruby on Rails, SQL, PostgresSQL, MongoDB, Git, Knex" />
-			<SkillsLanguage skills="Traditional Drawing, Painting, Sculpting, 2D Design, 3D Design, Typography, Web Design, Graphic Design, Photography, Print Making" />
+			<SkillsLanguage
+				skills="NodeJs, Javascript, Typescript, CSS, Sass, Ruby, Python, Xcode, AndroidStudio"
+				title="Environments & Languages"
+			/>
+			<SkillsLanguage
+				skills="React, ReactNative, JQuery, GSAP, Materialui, StyledComponents, Axios, Cheerio, Lodash, WebGL, EJS"
+				title="Libraries"
+			/>
+			<SkillsLanguage
+				skills="NextJs, VueJs, Websockets, ActiveRecord, Rails, Express, Bootstrap, Tailwind"
+				title="Protocols & Frameworks"
+			/>
+			<SkillsLanguage skills="MongoDB, SQL, PostgresSQL, Postgres, Git, Knex" title="Databases" />
+			<SkillsLanguage
+				skills="AdobeCS, HTMLS5Canvas, AutoCad, Blender, ThreeJs, Drawing, Painting, Typography, Web Design, Graphic Design, Photography"
+				title="Other Skills"
+			/>
 		</div>
 	);
 };
