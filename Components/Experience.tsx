@@ -36,7 +36,7 @@ const Experience = () => {
 				</div>
 
 				<div data-aos="fade-left" data-aos-delay="300" onClick={() => openNewTab("https://www.123loadbaord.com")}>
-					<div className="bg-green-600 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold p-[2rem]">
+					<div className="bg-green-600 hover:scale-110 transform transition-all duration-300 hover:rotate-6 uppercase font-semibold p-[2rem]">
 						<div className="text-center">
 							<Image src="/images/123Loadboard.png" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto " />
 							{/* <Image className="w-[6rem] h-[6rem] mx-auto text-[#d3fae8]" /> */}
