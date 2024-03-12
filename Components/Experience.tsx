@@ -8,7 +8,7 @@ const Experience = () => {
 			<p className="heading">
 				My <span className="text-red-500">Experience</span>
 			</p>
-			<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
 				<div data-aos="fade-right">
 					<div className="bg-green-600 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold p-[2rem]">
 						<div className="text-center">
