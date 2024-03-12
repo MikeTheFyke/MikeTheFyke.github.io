@@ -20,7 +20,7 @@ const Hero = () => {
 						quick learner when adapting to new languages and technologies, with a team-conscious approach.
 					</p>
 					<div className="mt-[2rem] flex-col space-y-6 sm:space-y-o sm:flex sm:flex-row items-center sm:space-x-6">
-						<button className="px-[2rem] hover:bg-red-500 motion-reduce:hover:transform-none duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
+						<button className="px-[2rem] hover:bg-red-500 transition duration-700 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
 							<a href="/MikeFyke-Resume.pdf">Download CV</a>
 							<ArrowDownTrayIcon className="w-[1.6rem] h[1.7rem] text-black" />
 						</button>
