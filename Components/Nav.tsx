@@ -7,23 +7,27 @@ interface Props {
 }
 
 const Nav = ({ openNav }: Props) => {
+	const navMain = useRef(null);
 	const navFyke = useRef(null);
 
 	useLayoutEffect(() => {
-		gsap.to(navFyke.current, { x: `-110vw`, duration: 0 });
-		gsap.to(navFyke.current, { x: 0, duration: 3, delay: 1 });
+		gsap.to(navMain.current, { x: `-110vw`, duration: 0 });
+		gsap.to(navFyke.current, { y: -50, duration: 0 });
+		gsap.to(navMain.current, { x: 0, duration: 2, delay: 1 });
+		gsap.to(navMain.current, { 7: 0, duration: 1, delay: 1.5 });
 	}, []);
 
 	return (
-		<div ref={navFyke} className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
+		<div ref={navMain} className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
 			<div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
-				<a href="#Hero" className="mr-[4rem]">
-					<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
-						MIKE
-						<span className="text-red-500">FYKE</span>
-					</h1>
-				</a>
-
+				<div ref={navFyke}>
+					<a href="#Hero" className="mr-[4rem]">
+						<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
+							MIKE
+							<span className="text-red-500">FYKE</span>
+						</h1>
+					</a>
+				</div>
 				<a className="nav-link" href="#Skills">
 					SKILLS
 				</a>
