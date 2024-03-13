@@ -11,15 +11,19 @@ const About = () => {
 						Curating <span className="text-red-500">Stories</span>
 					</h2>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<span className="w-[50px] hover:w-[0px] hover:h-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
+						<span className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
 						<p className="text-[19px] text-slate-300 w-[80%]">
 							Make users feel like they are experiencing a website instead of just viewing it, with micro-interactions.
 						</p>
 					</div>
-					{/* <button className="px-[2rem] hover:bg-red-500 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
-						<p>Download CV</p>
-						<ArrowDownTrayIcon className="w-[1.6rem] h[1.7rem] text-black" />
-					</button> */}
+					<div className="mb-[3rem] flex items-center md:space-x-10">
+						<span className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
+						<p className="text-[19px] text-slate-300 w-[80%]">
+							Guidlines can be like a fence around a yard. Some people can feel contained and stay firmly in the middle of the yard afraid
+							to go near the fence. But to truely make the best use of those guidlines somone need to walk along that fence like a tight
+							rope.
+						</p>
+					</div>
 				</div>
 				<div data-aos="fade-left" className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">
 					<Image
