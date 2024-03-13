@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Nav = ({ openNav }: Props) => {
-	gsap.to("#navFyke", { rotation: 27, x: 100, duration: 3 });
+	gsap.to(".navFyke", { rotation: 27, x: 100, duration: 3 });
 
 	return (
 		<div className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
@@ -15,9 +15,7 @@ const Nav = ({ openNav }: Props) => {
 				<a href="#Hero" className="mr-[4rem]">
 					<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
 						MIKE
-						<span className="text-red-500" id="navFyke">
-							FYKE
-						</span>
+						<span className="text-red-500 navFyke">FYKE</span>
 					</h1>
 				</a>
 				<a className="nav-link" href="#Skills">
