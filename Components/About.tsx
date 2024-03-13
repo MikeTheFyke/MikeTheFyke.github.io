@@ -19,9 +19,9 @@ const About = () => {
 					<div className="mb-[3rem] flex items-center md:space-x-10">
 						<span className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
 						<p className="text-[19px] text-slate-300 w-[80%]">
-							Guidlines can be like a fence around a yard. Some people can feel contained and stay firmly in the middle of the yard afraid
-							to go near the fence. But to truely make the best use of those guidlines somone need to walk along that fence like a tight
-							rope.
+							Guidlines can be like a fence around a yard. Some people can feel contained and stay firmly in the middle of the yard,
+							contained by those guidelines. But to truely make the best use of those guidlines somone needs to walk along that fence like a
+							tight rope.
 						</p>
 					</div>
 				</div>
