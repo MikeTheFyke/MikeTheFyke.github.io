@@ -14,7 +14,7 @@ const Experience = () => {
 				My <span className="text-red-500">Experience</span>
 			</p>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
-				<div data-aos="fade-right" onClick={() => openNewTab("https://www.123loadbaord.com")}>
+				<div data-aos="fade-right" onClick={() => openNewTab("https://www.123loadboard.com")} className="cursor-pointer">
 					<div className="bg-green-600 hover:scale-110 transform transition-all duration-300 hover:-rotate-6 uppercase font-semibold p-[2rem]">
 						<div className="text-center">
 							<Image src="/images/123Loadboard.png" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto " />
@@ -35,7 +35,12 @@ const Experience = () => {
 					</div>
 				</div>
 
-				<div data-aos="fade-left" data-aos-delay="300" onClick={() => openNewTab("https://www.123loadbaord.com")}>
+				<div
+					data-aos="fade-left"
+					data-aos-delay="300"
+					onClick={() => openNewTab("https://www.123loadboard.com")}
+					className="cursor-pointer"
+				>
 					<div className="bg-green-600 hover:scale-110 transform transition-all duration-300 hover:rotate-6 uppercase font-semibold p-[2rem]">
 						<div className="text-center">
 							<Image src="/images/123Loadboard.png" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto " />
