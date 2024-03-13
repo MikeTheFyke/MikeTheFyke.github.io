@@ -1,5 +1,5 @@
 import { Bars3Icon } from "@heroicons/react/20/solid";
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 interface Props {
@@ -7,8 +7,10 @@ interface Props {
 }
 
 const Nav = ({ openNav }: Props) => {
+	const navFyke = useRef(null);
+
 	useLayoutEffect(() => {
-		gsap.to(".navFyke", { rotation: 27, x: 100, duration: 3 });
+		gsap.to(navFyke.current, { scale: 200, x: 100, duration: 3 });
 	}, []);
 
 	return (
@@ -17,7 +19,9 @@ const Nav = ({ openNav }: Props) => {
 				<a href="#Hero" className="mr-[4rem]">
 					<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
 						MIKE
-						<span className="text-red-500 navFyke">FYKE</span>
+						<span ref={navFyke} className="text-red-500">
+							FYKE
+						</span>
 					</h1>
 				</a>
 				<a className="nav-link" href="#Skills">
