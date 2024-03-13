@@ -35,18 +35,18 @@ const Nav = ({ openNav }: Props) => {
 					<a className="nav-link" href="#Skills">
 						SKILLS
 					</a>
-					<a className="nav-link" href="#Projects">
-						PROJECTS
-					</a>
-					<a className="nav-link" href="#Experience">
-						EXPERIENCE
-					</a>
-					<a className="nav-link" href="#Contact">
-						CONTACT
-					</a>
-					<div onClick={openNav}>
-						<Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-red-500" />
-					</div>
+				</div>
+				<a className="nav-link" href="#Projects">
+					PROJECTS
+				</a>
+				<a className="nav-link" href="#Experience">
+					EXPERIENCE
+				</a>
+				<a className="nav-link" href="#Contact">
+					CONTACT
+				</a>
+				<div onClick={openNav}>
+					<Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-red-500" />
 				</div>
 			</div>
 		</div>
