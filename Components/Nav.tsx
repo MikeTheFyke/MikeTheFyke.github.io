@@ -9,12 +9,15 @@ interface Props {
 const Nav = ({ openNav }: Props) => {
 	const navMain = useRef(null);
 	const navFyke = useRef(null);
+	const navLinks = useRef(null);
 
 	useLayoutEffect(() => {
 		gsap.to(navMain.current, { x: `-110vw`, duration: 0 });
 		gsap.to(navFyke.current, { y: -60, duration: 0 });
+		gsap.to(navLinks.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navMain.current, { x: 0, duration: 2, display: "block", delay: 1 });
-		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 1.5 });
+		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 2 });
+		gsap.to(navLinks.current, { scaleX: `100%`, scaleY: `100%`, delay: 2 });
 	}, []);
 
 	return (
@@ -28,20 +31,22 @@ const Nav = ({ openNav }: Props) => {
 						</h1>
 					</a>
 				</div>
-				<a className="nav-link" href="#Skills">
-					SKILLS
-				</a>
-				<a className="nav-link" href="#Projects">
-					PROJECTS
-				</a>
-				<a className="nav-link" href="#Experience">
-					EXPERIENCE
-				</a>
-				<a className="nav-link" href="#Contact">
-					CONTACT
-				</a>
-				<div onClick={openNav}>
-					<Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-red-500" />
+				<div ref={navLinks}>
+					<a className="nav-link" href="#Skills">
+						SKILLS
+					</a>
+					<a className="nav-link" href="#Projects">
+						PROJECTS
+					</a>
+					<a className="nav-link" href="#Experience">
+						EXPERIENCE
+					</a>
+					<a className="nav-link" href="#Contact">
+						CONTACT
+					</a>
+					<div onClick={openNav}>
+						<Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-red-500" />
+					</div>
 				</div>
 			</div>
 		</div>
