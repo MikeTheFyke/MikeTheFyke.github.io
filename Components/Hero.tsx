@@ -21,11 +21,11 @@ const Hero = () => {
 					</p>
 					<div className="mt-[2rem] flex-col space-y-6 sm:space-y-o sm:flex sm:flex-row items-center sm:space-x-6">
 						<button
-							className="px-[2rem]  py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2"
+							className="px-[2rem]  py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5]flex items-center space-x-2"
 							id="downloadButton"
 						>
 							<a href="/MikeFyke-Resume.pdf">Download CV</a>
-							<ArrowDownTrayIcon className="w-[1.6rem] h[1.7rem] text-black" />
+							<ArrowDownTrayIcon className="w-[1.6rem] h[1.7rem] text-black hover:text-white" />
 						</button>
 					</div>
 				</div>
