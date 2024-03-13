@@ -43,7 +43,7 @@ const Homepage = () => {
 	}, []);
 
 	return (
-		<div className="overflow-x-hidden">
+		<div>
 			<div>
 				<MobileNav nav={nav} closeNav={closeNav} />
 				<Nav openNav={openNav} />
