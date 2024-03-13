@@ -9,15 +9,25 @@ interface Props {
 const Nav = ({ openNav }: Props) => {
 	const navMain = useRef(null);
 	const navFyke = useRef(null);
-	const navLinks = useRef(null);
+	const navLinkSkills = useRef(null);
+
+	const navLinkProjects = useRef(null);
+	const navLinkExperience = useRef(null);
+	const navLinkContact = useRef(null);
 
 	useLayoutEffect(() => {
 		gsap.to(navMain.current, { x: `-110vw`, duration: 0 });
 		gsap.to(navFyke.current, { y: -60, duration: 0 });
-		gsap.to(navLinks.current, { scaleX: 0, scaleY: 0, duration: 0 });
+		gsap.to(navLinkSkills.current, { scaleX: 0, scaleY: 0, duration: 0 });
+		gsap.to(navLinkProjects.current, { scaleX: 0, scaleY: 0, duration: 0 });
+		gsap.to(navLinkExperience.current, { scaleX: 0, scaleY: 0, duration: 0 });
+		gsap.to(navLinkContact.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navMain.current, { x: 0, duration: 2, display: "block", delay: 1 });
 		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 2 });
-		gsap.to(navLinks.current, { scaleX: `100%`, scaleY: `100%`, delay: 2 });
+		gsap.to(navLinkSkills.current, { scaleX: `100%`, scaleY: `100%`, delay: 2 });
+		gsap.to(navLinkProjects.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.25 });
+		gsap.to(navLinkExperience.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.5 });
+		gsap.to(navLinkContact.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.75 });
 	}, []);
 
 	return (
@@ -31,20 +41,26 @@ const Nav = ({ openNav }: Props) => {
 						</h1>
 					</a>
 				</div>
-				<div ref={navLinks}>
+				<div ref={navLinkSkills}>
 					<a className="nav-link" href="#Skills">
 						SKILLS
 					</a>
 				</div>
-				<a className="nav-link" href="#Projects">
-					PROJECTS
-				</a>
-				<a className="nav-link" href="#Experience">
-					EXPERIENCE
-				</a>
-				<a className="nav-link" href="#Contact">
-					CONTACT
-				</a>
+				<div ref={navLinkProjects}>
+					<a className="nav-link" href="#Projects">
+						PROJECTS
+					</a>
+				</div>
+				<div ref={navLinkExperience}>
+					<a className="nav-link" href="#Experience">
+						EXPERIENCE
+					</a>
+				</div>
+				<div ref={navLinkContact}>
+					<a className="nav-link" href="#Contact">
+						CONTACT
+					</a>
+				</div>
 				<div onClick={openNav}>
 					<Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-red-500" />
 				</div>
