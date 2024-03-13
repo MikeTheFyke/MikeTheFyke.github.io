@@ -1,5 +1,5 @@
 import { Bars3Icon } from "@heroicons/react/20/solid";
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 
 interface Props {
@@ -7,7 +7,9 @@ interface Props {
 }
 
 const Nav = ({ openNav }: Props) => {
-	gsap.to(".navFyke", { rotation: 27, x: 100, duration: 3 });
+	useLayoutEffect(() => {
+		gsap.to(".navFyke", { rotation: 27, x: 100, duration: 3 });
+	}, []);
 
 	return (
 		<div className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
