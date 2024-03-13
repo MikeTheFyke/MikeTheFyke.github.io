@@ -1,6 +1,6 @@
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import React, { useLayoutEffect, useRef } from "react";
-import { gsap, TweenMax } from "gsap";
+import { gsap } from "gsap";
 
 interface Props {
 	openNav: () => void;
@@ -10,7 +10,7 @@ const Nav = ({ openNav }: Props) => {
 	const navFyke = useRef(null);
 
 	useLayoutEffect(() => {
-		TweenMax.to(navFyke.current, { scale: 200, x: 100, duration: 3 });
+		gsap.to(navFyke.current, { scale: 200, x: 100, duration: 3 });
 	}, []);
 
 	return (
@@ -19,9 +19,9 @@ const Nav = ({ openNav }: Props) => {
 				<a href="#Hero" className="mr-[4rem]">
 					<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
 						MIKE
-						<span ref={navFyke} className="text-red-500">
-							FYKE
-						</span>
+						<div ref={navFyke}>
+							<span className="text-red-500">FYKE</span>
+						</div>
 					</h1>
 				</a>
 				<a className="nav-link" href="#Skills">
