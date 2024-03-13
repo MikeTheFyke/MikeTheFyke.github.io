@@ -13,14 +13,14 @@ const Nav = ({ openNav }: Props) => {
 	useLayoutEffect(() => {
 		gsap.to(navMain.current, { x: `-110vw`, duration: 0 });
 		gsap.to(navFyke.current, { y: -60, duration: 0 });
-		gsap.to(navMain.current, { x: 0, duration: 2, display: "hidden", delay: 1 });
+		gsap.to(navMain.current, { x: 0, duration: 2, display: "block", delay: 1 });
 		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 1.5 });
 	}, []);
 
 	return (
 		<div ref={navMain} className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
 			<div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
-				<div ref={navFyke}>
+				<div ref={navFyke} className="hidden">
 					<a href="#Hero" className="mr-[4rem]">
 						<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
 							MIKE
