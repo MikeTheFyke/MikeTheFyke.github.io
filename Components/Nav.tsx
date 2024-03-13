@@ -14,7 +14,7 @@ const Nav = ({ openNav }: Props) => {
 		gsap.to(navMain.current, { x: `-110vw`, duration: 0 });
 		gsap.to(navFyke.current, { y: -60, duration: 0 });
 		gsap.to(navMain.current, { x: 0, duration: 2, display: "hidden", delay: 1 });
-		gsap.to(navFyke.current, { y: 30, duration: 1, delay: 1.5 });
+		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 1.5 });
 	}, []);
 
 	return (
