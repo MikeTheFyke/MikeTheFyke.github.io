@@ -10,8 +10,8 @@ const Nav = ({ openNav }: Props) => {
 	const navFyke = useRef(null);
 
 	useLayoutEffect(() => {
-		gsap.to(navFyke.current, { x: `-100vw`, duration: 0 });
-		gsap.to(navFyke.current, { x: 0, duration: 3 });
+		gsap.to(navFyke.current, { x: `-110vw`, duration: 0 });
+		gsap.to(navFyke.current, { x: 0, duration: 3, delay: 1 });
 	}, []);
 
 	return (
@@ -20,11 +20,10 @@ const Nav = ({ openNav }: Props) => {
 				<a href="#Hero" className="mr-[4rem]">
 					<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
 						MIKE
-						<div>
-							<span className="text-red-500">FYKE</span>
-						</div>
+						<span className="text-red-500">FYKE</span>
 					</h1>
 				</a>
+
 				<a className="nav-link" href="#Skills">
 					SKILLS
 				</a>
