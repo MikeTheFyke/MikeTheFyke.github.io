@@ -53,7 +53,7 @@ const Experience = () => {
 				{/* Glass 02 */}
 				<div className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem]">
 					<div className="animate-pulse flex space-x-4">
-						<Image src="/images/ProsperousFarm.jpeg" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto" />
+						<Image src="/images/ProsperousFarmAvatar.jpeg" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto" />
 						<div className="flex-1 space-y-6 py-1">
 							<div>
 								<h1 className="text-[20px] md:text-[30px] mt-[.25rem]  text-slate-700 font-bold">The Prosperous Farm</h1>
