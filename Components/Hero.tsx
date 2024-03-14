@@ -6,6 +6,8 @@ import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 
 const Hero = () => {
+	//  h-[250px] w-[100px]
+
 	return (
 		<div className="h-[88vh] bg-[#EFEFEF] mt-[12vh]" id="Hero">
 			{/* <Particle /> */}
@@ -43,7 +45,7 @@ const Hero = () => {
 				</div>
 				<div
 					data-aos="zoom-in"
-					className="relative lg:flex items-center rounded-full h-[100px] w-[250px] md:h-[200px] md:w-[200px] lg:h-[450px] lg:w-[450px]"
+					className="hidden relative lg:flex items-center rounded-full md:h-[200px] md:w-[200px] lg:h-[450px] lg:w-[450px]"
 				>
 					<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
 				</div>
