@@ -30,19 +30,19 @@ const Experience = () => {
 							<div className="space-y-3">
 								<div className="grid grid-cols-2 gap-4">
 									<div className="">
-										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2">
-											<li>Fixed/reported bugs</li>
-											<li>Built new features</li>
-											<li>Improved old features</li>
-											<li>Took part in code reviews</li>
+										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2 list-item">
+											<li>Fixed/reported bugs.</li>
+											<li>Built new features.</li>
+											<li>Improved old features.</li>
+											<li>Took part in code reviews.</li>
 										</ul>
 									</div>
 									<div className="">
-										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2">
-											<li>Built an avatar upload feature</li>
-											<li>Built an internal integration portal</li>
-											<li>Managed a frontend team</li>
-											<li>Took part in integration meetings</li>
+										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2 list-item">
+											<li>Built an avatar upload feature.</li>
+											<li>Built an internal integration portal.</li>
+											<li>Managed a frontend team.</li>
+											<li>Took part in integration meetings.</li>
 										</ul>
 									</div>
 								</div>
