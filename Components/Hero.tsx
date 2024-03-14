@@ -34,6 +34,12 @@ const Hero = () => {
 										icon.style.color = "white";
 									}
 								}}
+								onMouseLeave={() => {
+									const icon = document.getElementById("downloadIcon");
+									if (icon) {
+										icon.style.color = "black";
+									}
+								}}
 							/>
 						</button>
 					</div>
