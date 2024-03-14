@@ -38,7 +38,7 @@ const About = () => {
 						alt="user"
 						layout="fill"
 						objectFit="contain"
-						className="absolute w-[100%] h-[100%] z-[10] bg-[#47B5E0] top-[-2rem] right-[-2rem]"
+						className="absolute w-[100%] h-[110%] z-[10] bg-[#47B5E0] top-[-2rem] right-[-2rem]"
 					/>
 					{/* <div className="absolute w-[100%] h-[100%] z-[10] bg-[#47B5E0] top-[-2rem] right-[-2rem]"></div> */}
 				</div>
