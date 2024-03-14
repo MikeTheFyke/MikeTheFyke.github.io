@@ -8,11 +8,11 @@ const About = () => {
 	const plusSlate2 = useRef(null);
 
 	const onHover = (id: any) => {
-		gsap.to(id.current, { rotation: 90, duration: 1 });
+		gsap.to(id.current, { rotation: 45, duration: 1 });
 	};
 
 	const onLeave = (id: any) => {
-		gsap.to(id.current, { rotation: 270, duration: 1 });
+		gsap.to(id.current, { rotation: -45, duration: 1 });
 	};
 
 	return (
@@ -23,7 +23,7 @@ const About = () => {
 						Curating <span className="text-red-500">Stories</span>
 					</h2>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<div onMouseOver={() => onHover(plusSlate1)} onMouseLeave={() => onLeave(plusSlate1)}>
+						<div style={{ width: "50px", height: "50px" }} onMouseOver={() => onHover(plusSlate1)} onMouseLeave={() => onLeave(plusSlate1)}>
 							<span ref={plusSlate1} className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
 						</div>
 						<p className="text-[19px] text-slate-300 w-[80%]">
@@ -31,7 +31,7 @@ const About = () => {
 						</p>
 					</div>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<div onMouseOver={() => onHover(plusSlate2)} onMouseLeave={() => onLeave(plusSlate2)}>
+						<div style={{ width: "50px", height: "50px" }} onMouseOver={() => onHover(plusSlate2)} onMouseLeave={() => onLeave(plusSlate2)}>
 							<span ref={plusSlate2} className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
 						</div>
 						<p className="text-[19px] text-slate-300 w-[80%]">
