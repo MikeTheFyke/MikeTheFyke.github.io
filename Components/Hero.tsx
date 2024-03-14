@@ -19,28 +19,27 @@ const Hero = () => {
 						An artistically trained full stack web developer, passionate in creating a unique user experience within the web environment. A
 						quick learner when adapting to new languages and technologies, with a team-conscious approach.
 					</p>
-					<div className="mt-[2rem] flex-col space-y-6 sm:space-y-o sm:flex sm:flex-row items-center sm:space-x-6">
+					<div
+						className="mt-[2rem] flex-col space-y-6 sm:space-y-o sm:flex sm:flex-row items-center sm:space-x-6"
+						onMouseOver={() => {
+							const icon = document.getElementById("downloadIcon");
+							if (icon) {
+								icon.style.color = "white";
+							}
+						}}
+						onMouseLeave={() => {
+							const icon = document.getElementById("downloadIcon");
+							if (icon) {
+								icon.style.color = "black";
+							}
+						}}
+					>
 						<button
 							className="px-[2rem]  py-[1rem] text-[18px] font-bold uppercase bg-[#47B5E0] text-black flex items-center space-x-2"
 							id="downloadButton"
 						>
 							<a href="/MikeFyke-Resume.pdf">Download CV</a>
-							<ArrowDownTrayIcon
-								id={"downloadIcon"}
-								className="w-[1.6rem] h[1.7rem]"
-								onMouseOver={() => {
-									const icon = document.getElementById("downloadIcon");
-									if (icon) {
-										icon.style.color = "white";
-									}
-								}}
-								onMouseLeave={() => {
-									const icon = document.getElementById("downloadIcon");
-									if (icon) {
-										icon.style.color = "black";
-									}
-								}}
-							/>
+							<ArrowDownTrayIcon id={"downloadIcon"} className="w-[1.6rem] h[1.7rem]" />
 						</button>
 					</div>
 				</div>
