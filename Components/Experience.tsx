@@ -13,7 +13,7 @@ const Experience = () => {
 			<p className="heading">
 				My <span className="text-red-500">Experience</span>
 			</p>
-			<div className="grid grid-cols-1 w-[80%] mx-auto items-center mt-[4rem] text-white">
+			<div className="w-[80%] mx-auto items-center mt-[4rem">
 				{/* Glass Section */}
 				<div className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto hover:scale-110 cursor-pointer">
 					<div className="animate-pulse flex space-x-4">
@@ -43,7 +43,6 @@ const Experience = () => {
 										</ul>
 									</div>
 								</div>
-								<div className="h-2 bg-slate-700 rounded"></div>
 							</div>
 						</div>
 					</div>
