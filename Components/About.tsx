@@ -23,23 +23,17 @@ const About = () => {
 						Curating <span className="text-red-500">Stories</span>
 					</h2>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<span
-							ref={plusSlate1}
-							className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"
-							onMouseOver={() => onHover(plusSlate1)}
-							onMouseLeave={() => onLeave(plusSlate1)}
-						></span>
+						<div onMouseOver={() => onHover(plusSlate1)} onMouseLeave={() => onLeave(plusSlate1)}>
+							<span ref={plusSlate1} className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
+						</div>
 						<p className="text-[19px] text-slate-300 w-[80%]">
 							Make users feel like they are experiencing a website instead of just viewing it, with micro-interactions.
 						</p>
 					</div>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<span
-							ref={plusSlate2}
-							className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"
-							onMouseOver={() => onHover(plusSlate2)}
-							onMouseLeave={() => onLeave(plusSlate2)}
-						></span>
+						<div onMouseOver={() => onHover(plusSlate2)} onMouseLeave={() => onLeave(plusSlate2)}>
+							<span ref={plusSlate2} className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
+						</div>
 						<p className="text-[19px] text-slate-300 w-[80%]">
 							Guidlines can be like a fence around a yard. Some people can feel contained and stay firmly in the middle of the yard,
 							contained by those guidelines. But to truely make the best use of those guidlines somone needs to walk along that fence like a
