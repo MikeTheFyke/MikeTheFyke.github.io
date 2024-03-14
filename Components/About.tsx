@@ -8,11 +8,11 @@ const About = () => {
 	const plusSlate2 = useRef(null);
 
 	const onHover = (id: any) => {
-		gsap.to(id.current, { rotationX: 90, duration: 1 });
+		gsap.to(id.current, { rotation: 90, duration: 1 });
 	};
 
 	const onLeave = (id: any) => {
-		gsap.to(id.current, { rotationX: 270, duration: 1 });
+		gsap.to(id.current, { rotation: 270, duration: 1 });
 	};
 
 	return (
