@@ -9,7 +9,7 @@ const Experience = () => {
 	};
 
 	return (
-		<div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]" id="Experience">
+		<div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem] md:pb-[8rem]" id="Experience">
 			<p className="heading">
 				My <span className="text-red-500">Experience</span>
 			</p>
@@ -24,8 +24,8 @@ const Experience = () => {
 						<div className="flex-1 space-y-6 py-1">
 							<div>
 								<h1 className="text-[20px] md:text-[30px] mt-[.25rem]  text-slate-700 font-bold">123Loadboard</h1>
-								<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700 font-semibold">Frontend Developer</h1>
-								<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700">April 2021 - January 2024</h1>
+								<h1 className="text-[20px] md:text-[18px] text-slate-700 font-semibold">Frontend Developer</h1>
+								<h1 className="text-[20px] md:text-[18px] text-slate-700">April 2021 - January 2024</h1>
 							</div>
 							<div className="space-y-3">
 								<div className="grid grid-cols-2 gap-4">
