@@ -22,9 +22,11 @@ const Experience = () => {
 					<div className="animate-pulse flex space-x-4">
 						<Image src="/images/123Loadboard.png" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto" />
 						<div className="flex-1 space-y-6 py-1">
-							<h1 className="text-[20px] md:text-[30px] mt-[1.5rem]  text-slate-700 font-bold">123Loadboard</h1>
-							<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700 font-semibold">Frontend Developer</h1>
-							<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700">April 2021 - January 2024</h1>
+							<div className="flex justify-end">
+								<h1 className="text-[20px] md:text-[30px] mt-[1.5rem]  text-slate-700 font-bold ">123Loadboard</h1>
+								<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700 font-semibold">Frontend Developer</h1>
+								<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700">April 2021 - January 2024</h1>
+							</div>
 							<div className="space-y-3">
 								<div className="grid grid-cols-2 gap-4">
 									<div className="">
