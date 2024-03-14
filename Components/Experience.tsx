@@ -16,7 +16,7 @@ const Experience = () => {
 			<div className="w-[80%] mx-auto items-center mt-[4rem">
 				{/* Glass Section */}
 				<div
-					className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto hover:scale-110 cursor-pointer"
+					className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem]"
 					onClick={() => openNewTab("https://www.123loadboard.com")}
 				>
 					<div className="animate-pulse flex space-x-4">
@@ -28,7 +28,7 @@ const Experience = () => {
 							<div className="space-y-3">
 								<div className="grid grid-cols-2 gap-4">
 									<div className="">
-										<ul className="text-[15px] text-[#e8e7e7] font-normal">
+										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2">
 											<li>Fixed/reported bugs</li>
 											<li>Built new features</li>
 											<li>Improved old features</li>
@@ -36,7 +36,7 @@ const Experience = () => {
 										</ul>
 									</div>
 									<div className="">
-										<ul className="text-[15px] text-[#e8e7e7] font-normal">
+										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2">
 											<li>Built an avatar upload feature</li>
 											<li>Built an internal integration portal</li>
 											<li>Managed a frontend team</li>
