@@ -19,7 +19,7 @@ const About = () => {
 						</p>
 					</div>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<div className="w-[50px] h-[50px]">
+						<div className="w-[50px] h-[50px] content-center">
 							<span className="w-[5px] hidden md:block h-[50px] bg-slate-400 rounded-sm"></span>
 						</div>
 						<p className="text-[19px] text-slate-300 w-[80%]">
