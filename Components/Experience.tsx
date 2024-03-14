@@ -14,15 +14,34 @@ const Experience = () => {
 				My <span className="text-red-500">Experience</span>
 			</p>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
-				<div className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+				{/* Glass Section */}
+				<div className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto hover:scale-110 cursor-pointer">
 					<div className="animate-pulse flex space-x-4">
-						<div className="rounded-full bg-slate-700 h-10 w-10"></div>
+						{/* <div className="rounded-full bg-slate-700 h-10 w-10"></div> */}
+						<Image src="/images/123Loadboard.png" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto " />
 						<div className="flex-1 space-y-6 py-1">
-							<div className="h-2 bg-slate-700 rounded"></div>
+							{/* <div className="h-2 bg-slate-700 rounded"></div> */}
+							<h1 className="text-[20px] md:text-[30px] mt-[1.5rem]  text-slate-700">123Loadboard</h1>
+							<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700">Frontend Developer</h1>
+							<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700">April 2021 - January 2024</h1>
 							<div className="space-y-3">
 								<div className="grid grid-cols-3 gap-4">
-									<div className="h-2 bg-slate-700 rounded col-span-2"></div>
-									<div className="h-2 bg-slate-700 rounded col-span-1"></div>
+									<div className="">
+										<ul className="text-[15px] text-[#e8e7e7] font-normal">
+											<li>Fixed/reported bugs</li>
+											<li>Built new features</li>
+											<li>Improved old features</li>
+											<li>Took part in code reviews</li>
+										</ul>
+									</div>
+									<div className="">
+										<ul className="text-[15px] text-[#e8e7e7] font-normal">
+											<li>Built an avatar upload feature</li>
+											<li>Built an internal integration portal</li>
+											<li>Managed a frontend team</li>
+											<li>Took part in integration meetings</li>
+										</ul>
+									</div>
 								</div>
 								<div className="h-2 bg-slate-700 rounded"></div>
 							</div>
