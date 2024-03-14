@@ -14,7 +14,7 @@ const About = () => {
 
 	const onLeave = (id: any) => {
 		gsap.from(id.current, { rotation: 45, duration: 0 });
-		gsap.to(id.current, { rotation: -45, duration: 1 });
+		gsap.to(id.current, { rotation: 0, duration: 1 });
 	};
 
 	return (
