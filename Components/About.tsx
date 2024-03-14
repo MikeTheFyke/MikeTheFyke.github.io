@@ -12,11 +12,11 @@ const About = () => {
 	}, []);
 
 	const onHover = (id: any) => {
-		gsap.to(id.current, { rotate: 90, duration: 2 });
+		gsap.to(id.current, { rotate: 180, duration: 1 });
 	};
 
 	const onLeave = (id: any) => {
-		gsap.to(id.current, { rotate: -90, duration: 2 });
+		gsap.to(id.current, { rotate: -180, duration: 1 });
 	};
 
 	return (
