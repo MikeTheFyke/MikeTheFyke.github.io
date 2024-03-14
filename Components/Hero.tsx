@@ -12,7 +12,7 @@ const Hero = () => {
 		<div className="h-[88vh] bg-[#EFEFEF] mt-[12vh]" id="Hero">
 			{/* <Particle /> */}
 			<div className="w-[80%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
-				<div data-aos="zoom-in" className="h-[250px] w-[100px] relative items-center rounded-full md:hidden lg:hidden">
+				<div data-aos="zoom-in" className="h-[350px] w-[350px] relative items-center rounded-full md:hidden lg:hidden">
 					<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
 				</div>
 				<div>
@@ -48,7 +48,7 @@ const Hero = () => {
 				</div>
 				<div
 					data-aos="zoom-in"
-					className="hidden relative  md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
+					className="hidden relative  md:flex lg:flex items-center rounded-full md:pl-[2rem] md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
 				>
 					<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
 				</div>
