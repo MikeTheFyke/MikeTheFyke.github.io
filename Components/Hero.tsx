@@ -48,11 +48,13 @@ const Hero = () => {
 						</button>
 					</div>
 				</div>
-				<div
-					data-aos="zoom-in"
-					className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
-				>
-					<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
+				<div className="hidden md:flex md:justify-center md:items-center md:w-[100%] lg:hidden">
+					<div
+						data-aos="zoom-in"
+						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
+					>
+						<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
+					</div>
 				</div>
 			</div>
 		</div>
