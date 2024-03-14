@@ -1,6 +1,7 @@
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import React, { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface Props {
 	openNav: () => void;
@@ -15,7 +16,7 @@ const Nav = ({ openNav }: Props) => {
 	const navLinkExperience = useRef(null);
 	const navLinkContact = useRef(null);
 
-	useLayoutEffect(() => {
+	const headerSlide = () => {
 		gsap.to(navMain.current, { x: `-110vw`, duration: 0 });
 		gsap.to(navFyke.current, { y: -60, duration: 0 });
 		gsap.to(navLinkSkills.current, { scaleX: 0, scaleY: 0, duration: 0 });
@@ -28,6 +29,10 @@ const Nav = ({ openNav }: Props) => {
 		gsap.to(navLinkProjects.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.25 });
 		gsap.to(navLinkExperience.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.5 });
 		gsap.to(navLinkContact.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.75 });
+	};
+
+	useLayoutEffect(() => {
+		headerSlide();
 	}, []);
 
 	return (
