@@ -11,13 +11,15 @@ const About = () => {
 						Curating <span className="text-red-500">Stories</span>
 					</h2>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<span className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
+						<div className="w-[50px] h-[50px]">
+							<span className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
+						</div>
 						<p className="text-[19px] text-slate-300 w-[80%]">
 							Make users feel like they are experiencing a website instead of just viewing it, with micro-interactions.
 						</p>
 					</div>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<div>
+						<div className="w-[50px] h-[50px]">
 							<span className="w-[5px] hidden md:block h-[50px] bg-slate-400 rounded-sm"></span>
 						</div>
 						<p className="text-[19px] text-slate-300 w-[80%]">
@@ -40,7 +42,7 @@ const About = () => {
 						alt="user"
 						layout="fill"
 						objectFit="contain"
-						className="absolute w-[100%] h-[110%] z-[10] bg-[#47B5E0] top-[-2rem] right-[-2rem]"
+						className="absolute w-[100%] h-[100%] z-[10] bg-[#47B5E0] top-[-2rem] right-[-2rem]"
 					/>
 				</div>
 			</div>
