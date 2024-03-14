@@ -25,7 +25,16 @@ const Hero = () => {
 							id="downloadButton"
 						>
 							<a href="/MikeFyke-Resume.pdf">Download CV</a>
-							<ArrowDownTrayIcon id={"downloadIcon"} className="w-[1.6rem] h[1.7rem]" />
+							<ArrowDownTrayIcon
+								id={"downloadIcon"}
+								className="w-[1.6rem] h[1.7rem]"
+								onMouseOver={() => {
+									const icon = document.getElementById("downloadIcon");
+									if (icon) {
+										icon.style.color = "white";
+									}
+								}}
+							/>
 						</button>
 					</div>
 				</div>
