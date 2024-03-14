@@ -48,7 +48,7 @@ const Hero = () => {
 						</button>
 					</div>
 				</div>
-				<div className="hidden md:flex md:justify-center md:items-center md:w-[100%] lg:hidden">
+				<div className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%]">
 					<div
 						data-aos="zoom-in"
 						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
