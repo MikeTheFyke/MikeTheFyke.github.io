@@ -41,7 +41,10 @@ const Hero = () => {
 						</button>
 					</div>
 				</div>
-				<div data-aos="zoom-in" className="hidden relative lg:flex items-center rounded-full h-[450px] w-[450px]">
+				<div
+					data-aos="zoom-in"
+					className="relative lg:flex items-center rounded-full h-[100px] w-[100px] md:h-[200px] md:w-[200px] lg:h-[450px] lg:w-[450px]"
+				>
 					<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
 				</div>
 			</div>
