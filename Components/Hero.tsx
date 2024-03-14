@@ -11,7 +11,7 @@ const Hero = () => {
 	return (
 		<div className="h-[88vh] bg-[#EFEFEF] mt-[12vh]" id="Hero">
 			{/* <Particle /> */}
-			<div className="w-[80%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
+			<div className="w-[80%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:gap-[1rem] md:gap-[4rem] lg:gap-[3rem] h-[100%] items-center">
 				<div className="sm:w-[100%] sm:mt-[rem] md:hidden lg:hidden">
 					<div data-aos="zoom-in" className="h-[250px] w-[250px] relative items-center rounded-full md:hidden lg:hidden">
 						<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
