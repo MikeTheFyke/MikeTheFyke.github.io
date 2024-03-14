@@ -40,29 +40,29 @@ const Nav = ({ openNav }: Props) => {
 			<div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
 				<div ref={navFyke} style={{ display: "hidden" }}>
 					<a href="#Hero" className="mr-[4rem]">
-						<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
+						<h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 							MIKE
 							<span className="text-red-500">FYKE</span>
 						</h1>
 					</a>
 				</div>
 				<div ref={navLinkSkills}>
-					<a className="nav-link" href="#Skills">
+					<a className="nav-link drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" href="#Skills">
 						SKILLS
 					</a>
 				</div>
 				<div ref={navLinkProjects}>
-					<a className="nav-link" href="#Projects">
+					<a className="nav-link drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" href="#Projects">
 						PROJECTS
 					</a>
 				</div>
 				<div ref={navLinkExperience}>
-					<a className="nav-link" href="#Experience">
+					<a className="nav-link drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" href="#Experience">
 						EXPERIENCE
 					</a>
 				</div>
 				<div ref={navLinkContact}>
-					<a className="nav-link" href="#Contact">
+					<a className="nav-link drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" href="#Contact">
 						CONTACT
 					</a>
 				</div>
