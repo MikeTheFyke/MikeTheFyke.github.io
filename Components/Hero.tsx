@@ -25,7 +25,7 @@ const Hero = () => {
 							id="downloadButton"
 						>
 							<a href="/MikeFyke-Resume.pdf">Download CV</a>
-							<ArrowDownTrayIcon className="w-[1.6rem] h[1.7rem] text-black hover:color-white" />
+							<ArrowDownTrayIcon className="w-[1.6rem] h[1.7rem]" style={{ color: "white" }} />
 						</button>
 					</div>
 				</div>
