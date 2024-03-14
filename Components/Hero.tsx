@@ -15,7 +15,7 @@ const Hero = () => {
 						Hey Hey! <span className="text-red-500">It's me Mike!</span>
 					</h1>
 					<TextEffect />
-					<p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
+					<p className="mt-[1.5rem] text-[18px] text-[#ABABAB]">
 						An artistically trained full stack web developer, passionate in creating a unique user experience within the web environment. A
 						quick learner when adapting to new languages and technologies, with a team-conscious approach.
 					</p>
