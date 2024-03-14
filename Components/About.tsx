@@ -1,8 +1,24 @@
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import Image from "next/image";
+import { gsap } from "gsap";
 
 const About = () => {
+	const plusSlate1 = useRef(null);
+	const plusSlate2 = useRef(null);
+
+	useLayoutEffect(() => {
+		gsap.to(plusSlate1.current, { rotate: 90, duration: 2 });
+	}, []);
+
+	const onHover = (id: any) => {
+		gsap.to(id.current, { rotate: 90, duration: 2 });
+	};
+
+	const onLeave = (id: any) => {
+		gsap.to(id.current, { rotate: -90, duration: 2 });
+	};
+
 	return (
 		<div className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
 			<div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
@@ -11,17 +27,23 @@ const About = () => {
 						Curating <span className="text-red-500">Stories</span>
 					</h2>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<div className="w-[50px] h-[50px]">
-							<span className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
-						</div>
+						<span
+							ref={plusSlate1}
+							className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"
+							onMouseOver={() => onHover(plusSlate1)}
+							onMouseLeave={() => onLeave(plusSlate1)}
+						></span>
 						<p className="text-[19px] text-slate-300 w-[80%]">
 							Make users feel like they are experiencing a website instead of just viewing it, with micro-interactions.
 						</p>
 					</div>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
-						<div className="w-[50px] h-[50px] content-center">
-							<span className="w-[5px] hidden md:block h-[50px] bg-slate-400 rounded-sm"></span>
-						</div>
+						<span
+							ref={plusSlate2}
+							className="w-[50px] hidden md:block h-[5px] bg-slate-400 rounded-sm"
+							onMouseOver={() => onHover(plusSlate2)}
+							onMouseLeave={() => onLeave(plusSlate2)}
+						></span>
 						<p className="text-[19px] text-slate-300 w-[80%]">
 							Guidlines can be like a fence around a yard. Some people can feel contained and stay firmly in the middle of the yard,
 							contained by those guidelines. But to truely make the best use of those guidlines somone needs to walk along that fence like a
