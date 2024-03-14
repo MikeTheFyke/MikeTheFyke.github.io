@@ -16,7 +16,7 @@ const Experience = () => {
 			<div className="w-[80%] mx-auto items-center mt-[4rem">
 				{/* Glass Section */}
 				<div
-					className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem]"
+					className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem] md-w[100%]"
 					onClick={() => openNewTab("https://www.123loadboard.com")}
 				>
 					<div className="animate-pulse flex space-x-4">
