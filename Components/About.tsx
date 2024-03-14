@@ -22,7 +22,7 @@ const About = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
 				<div>
 					<h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
-						Curating <span className="text-red-500">Stories</span>
+						Crafting <span className="text-red-500">Stories</span>
 					</h2>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
 						<div style={{ width: "50px", height: "50px" }} onMouseOver={() => onHover(plusSlate1)} onMouseLeave={() => onLeave(plusSlate1)}>
