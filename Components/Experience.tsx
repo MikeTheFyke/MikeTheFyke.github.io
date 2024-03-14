@@ -15,14 +15,15 @@ const Experience = () => {
 			</p>
 			<div className="w-[80%] mx-auto items-center mt-[4rem">
 				{/* Glass Section */}
-				<div className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto hover:scale-110 cursor-pointer">
+				<div
+					className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto hover:scale-110 cursor-pointer"
+					onClick={() => openNewTab("https://www.123loadboard.com")}
+				>
 					<div className="animate-pulse flex space-x-4">
-						{/* <div className="rounded-full bg-slate-700 h-10 w-10"></div> */}
-						<Image src="/images/123Loadboard.png" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto " />
+						<Image src="/images/123Loadboard.png" alt="companyAvatar" className="w-[4rem] h-[4em] mx-auto" />
 						<div className="flex-1 space-y-6 py-1">
-							{/* <div className="h-2 bg-slate-700 rounded"></div> */}
-							<h1 className="text-[20px] md:text-[30px] mt-[1.5rem]  text-slate-700">123Loadboard</h1>
-							<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700">Frontend Developer</h1>
+							<h1 className="text-[20px] md:text-[30px] mt-[1.5rem]  text-slate-700 font-bold">123Loadboard</h1>
+							<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700 font-semibold">Frontend Developer</h1>
 							<h1 className="text-[20px] md:text-[18px] mt-[1.5rem] text-slate-700">April 2021 - January 2024</h1>
 							<div className="space-y-3">
 								<div className="grid grid-cols-2 gap-4">
