@@ -18,7 +18,7 @@ const About = () => {
 	};
 
 	return (
-		<div className="pb-[3rem] pt-[4rem] md:pt-[8rem]">
+		<div className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
 			<div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
 				<div>
 					<h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
