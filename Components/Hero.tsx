@@ -11,7 +11,7 @@ const Hero = () => {
 			{/* <Particle /> */}
 			<div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
 				<div>
-					<h1 className="text-[35px] md:text-[50px] text-white font=bold">
+					<h1 className="text-[35px] md:text-[50px] text-white font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 						Hey Hey! <span className="text-red-500">It's me Mike!</span>
 					</h1>
 					<TextEffect />
