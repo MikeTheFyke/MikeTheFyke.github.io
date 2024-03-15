@@ -13,13 +13,13 @@ const Hero = () => {
 
 	const flipAvatarCard = () => {
 		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
+		gsap.to(avatarCard.current, { rotationY: 0, duration: 1, delay: 1 });
 		gsap.to(avatarCardImage1.current, {
 			backgroundImage:
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
 			duration: 1,
 			delay: 2,
 		});
-		gsap.to(avatarCard.current, { rotationY: 0, duration: 1, delay: 1 });
 		currentAvatar === avatarImage2
 			? setCurrentAvatar(avatarImage1)
 			: setCurrentAvatar(avatarImage2);
