@@ -7,7 +7,7 @@ import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 const Hero = () => {
 	return (
 		<div id="Hero">
-			<div className="w-[80%] h-[90%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:gap-[1rem] md:gap-[1rem] lg:gap-[3rem] md:h-[100%] lg:h-[100%] items-center">
+			<div className="w-[80%] h-[90%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:gap-[1rem] md:gap-[2rem] lg:gap-[3rem] md:h-[100%] lg:h-[100%] items-center">
 				<div className="sm:w-[100%] sm:mt-[rem] md:hidden lg:hidden flex justify-center items-center">
 					<div
 						data-aos="zoom-in"
