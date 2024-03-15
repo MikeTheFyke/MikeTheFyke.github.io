@@ -20,7 +20,6 @@ const Hero = () => {
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
 			delay: 1,
 		});
-		// tl.to(avatarCard.current, 0.5, { rotationY: 0 });
 		nextImage();
 	};
 
