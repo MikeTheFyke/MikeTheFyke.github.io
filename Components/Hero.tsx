@@ -12,14 +12,16 @@ const Hero = () => {
 	const [currentAvatar, setCurrentAvatar] = useState(avatarImage1);
 
 	const flipAvatarCard = () => {
-		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
-		gsap.to(avatarCardImage1.current, {
+		const tl = gsap.timeline();
+		tl.to(avatarCard.current, { rotationY: 90, duration: 1 });
+
+		// gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
+		tl.to(avatarCardImage1.current, {
 			backgroundImage:
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
 			duration: 0,
-			delay: 2,
 		});
-		gsap.to(avatarCard.current, { rotationY: 0, duration: 1, delay: 1 });
+		tl.to(avatarCard.current, { rotationY: 0, duration: 1 });
 		currentAvatar === avatarImage2
 			? setCurrentAvatar(avatarImage1)
 			: setCurrentAvatar(avatarImage2);
