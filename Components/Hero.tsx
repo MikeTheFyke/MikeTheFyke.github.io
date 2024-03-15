@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
@@ -13,9 +13,14 @@ const Hero = () => {
 		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
 	};
 
+	useEffect(() => {
+		const url = "/images/mikeFykeAvatar.jpeg";
+		document.getElementById("avatarCardSrc")?.setAttribute("src", url);
+	}, []);
+
 	useLayoutEffect(() => {
 		const url = "/images/mikeFykeAvatar.jpeg";
-		document.getElementById("avatarCardImage")?.setAttribute("src", url);
+		document.getElementById("avatarCardSrc")?.setAttribute("src", url);
 		// gsap.to(avatarCardImage.current, {
 		// 	src: url,
 		// 	duration: 0,
@@ -95,7 +100,7 @@ const Hero = () => {
 							alt="user"
 							layout="fill"
 							className="object-cover rounded-full"
-							id="avatarCardImage"
+							id="avatarCardSrc"
 							ref={avatarCardImage}
 						/>
 					</div>
