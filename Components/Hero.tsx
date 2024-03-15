@@ -14,10 +14,12 @@ const Hero = () => {
 	};
 
 	useLayoutEffect(() => {
-		gsap.to(avatarCardImage.current, {
-			src: "/images/mikeFykeAvatar.jpeg",
-			duration: 0,
-		});
+		const url = "/images/mikeFykeAvatar.jpeg";
+		document.getElementById("avatarCardImage")?.setAttribute("src", url);
+		// gsap.to(avatarCardImage.current, {
+		// 	src: url,
+		// 	duration: 0,
+		// });
 	}, []);
 
 	return (
