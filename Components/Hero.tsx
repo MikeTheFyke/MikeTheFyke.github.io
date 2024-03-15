@@ -31,7 +31,7 @@ const Hero = () => {
 					<div>
 						<TextEffect />
 					</div>
-					<p className="mt-[1.5rem] text-[18px] text-[#ABABAB]">
+					<p className="body-texts mt-[1.5rem] text-[#ABABAB]">
 						An artistically trained full stack web developer, passionate in
 						creating a unique user experience within the web environment. A
 						quick learner when adapting to new languages and technologies, with

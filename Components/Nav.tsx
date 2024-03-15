@@ -56,7 +56,7 @@ const Nav = ({ openNav }: Props) => {
 			<div className="nav-inner-container ">
 				<div ref={navFyke} style={{ display: "hidden" }}>
 					<a href="#Hero" className="mr-[4rem]">
-						<h1 className="text-white">
+						<h1 className="text-white nav-fyke-header">
 							MIKE
 							<span className="text-red-500">FYKE</span>
 						</h1>
