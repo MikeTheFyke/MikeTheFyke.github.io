@@ -1,10 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useRef } from "react";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
+import { gsap } from "gsap";
 
 const Hero = () => {
+	const avatarCard = useRef(null);
+
+	const flipAvatarCard = () => {
+		gsap.to(avatarCard.current, { rotationY: 180, duration: 1 });
+	};
+
 	return (
 		<div id="Hero">
 			<div className="w-[80%] h-[90%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:gap-[1rem] md:gap-[2rem] lg:gap-[3rem] md:h-[100%] lg:h-[100%] items-center">
@@ -63,7 +70,12 @@ const Hero = () => {
 						</button>
 					</div>
 				</div>
-				<div className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%]">
+				<div
+					className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%]"
+					onMouseOver={() => flipAvatarCard()}
+					onClick={() => flipAvatarCard()}
+					ref={avatarCard}
+				>
 					<div
 						data-aos="zoom-in"
 						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
