@@ -17,7 +17,7 @@ const Hero = () => {
 			backgroundImage:
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
 			duration: 0,
-			delay: 1,
+			delay: 2,
 		});
 		gsap.to(avatarCard.current, { rotationY: 0, duration: 1, delay: 1 });
 		currentAvatar === avatarImage2
