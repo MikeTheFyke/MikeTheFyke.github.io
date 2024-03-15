@@ -1,5 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
@@ -8,16 +7,22 @@ import { gsap } from "gsap";
 const Hero = () => {
 	const avatarCard = useRef(null);
 	const avatarCardImage1 = useRef(null);
-	const avatarCardImage2 = useRef(null);
+	const avatarImage1 = `url('/images/MikeFyke-Gen01.jpeg')`;
+	const avatarImage2 = `url('/images/mikeFykeAvatar.jpeg')`;
+	const [currentAvatar, setCurrentAvatar] = useState(avatarImage1);
 
 	const flipAvatarCard = () => {
 		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
 		gsap.to(avatarCardImage1.current, {
-			backgroundImage: `url('/images/mikeFykeAvatar.jpeg')`,
+			backgroundImage:
+				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
 			duration: 0,
 			delay: 1,
 		});
 		gsap.to(avatarCard.current, { rotationY: 0, duration: 1, delay: 1 });
+		currentAvatar === avatarImage2
+			? setCurrentAvatar(avatarImage1)
+			: setCurrentAvatar(avatarImage2);
 	};
 
 	useEffect(() => {}, []);
@@ -93,7 +98,7 @@ const Hero = () => {
 						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
 						id={"card01"}
 						style={{
-							backgroundImage: `url('/images/MikeFyke-Gen01.jpeg')`,
+							backgroundImage: currentAvatar,
 							backgroundRepeat: "no-repeat",
 							backgroundSize: "cover",
 							backgroundPosition: "center",
