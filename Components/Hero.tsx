@@ -21,10 +21,15 @@ const Hero = () => {
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
 		});
 		tl.to(avatarCard.current, { rotationY: 0, duration: 1 });
-		currentAvatar === avatarImage2
-			? setCurrentAvatar(avatarImage1)
-			: setCurrentAvatar(avatarImage2);
 	};
+
+	useEffect(() => {
+		if (currentAvatar === avatarImage2) {
+			setCurrentAvatar(avatarImage1);
+		} else {
+			setCurrentAvatar(avatarImage2);
+		}
+	}, []);
 
 	return (
 		<div id="Hero">
