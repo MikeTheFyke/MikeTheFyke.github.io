@@ -17,13 +17,13 @@ const Nav = ({ openNav }: Props) => {
 	const navLinkContact = useRef(null);
 
 	const headerSlide = () => {
-		gsap.to(navMain.current, { x: `-110vw`, duration: 0 });
+		gsap.to(navMain.current, { x: `-120vw`, duration: 0 });
 		gsap.to(navFyke.current, { y: -60, duration: 0 });
 		gsap.to(navLinkSkills.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkProjects.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkExperience.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkContact.current, { scaleX: 0, scaleY: 0, duration: 0 });
-		gsap.to(navMain.current, { x: 0, duration: 2, display: "block", delay: 1 });
+		gsap.to(navMain.current, { x: 0, duration: 2, display: "block" });
 		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 2.75 });
 		gsap.to(navLinkSkills.current, { scaleX: `100%`, scaleY: `100%`, delay: 2 });
 		gsap.to(navLinkProjects.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.25 });
