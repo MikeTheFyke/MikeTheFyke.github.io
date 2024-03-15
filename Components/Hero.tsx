@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
@@ -7,10 +7,18 @@ import { gsap } from "gsap";
 
 const Hero = () => {
 	const avatarCard = useRef(null);
+	const avatarCardImage = useRef(null);
 
 	const flipAvatarCard = () => {
 		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
 	};
+
+	useLayoutEffect(() => {
+		gsap.to(avatarCardImage.current, {
+			src: "/images/mikeFykeAvatar.jpeg",
+			duration: 0,
+		});
+	}, []);
 
 	return (
 		<div id="Hero">
@@ -85,6 +93,8 @@ const Hero = () => {
 							alt="user"
 							layout="fill"
 							className="object-cover rounded-full"
+							id="avatarCardImage"
+							ref={avatarCardImage}
 						/>
 					</div>
 				</div>
