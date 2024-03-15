@@ -90,7 +90,7 @@ const Hero = () => {
 					>
 						<div
 							style={{
-								backgroundImage: "url(/images/MikeFyke-Gen01.jpeg)",
+								backgroundImage: `url('/images/MikeFyke-Gen01.jpeg')`,
 								backgroundRepeat: "no-repeat",
 							}}
 						></div>
