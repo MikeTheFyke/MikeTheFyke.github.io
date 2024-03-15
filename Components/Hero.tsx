@@ -11,13 +11,13 @@ const Hero = () => {
 	const avatarCardImage2 = useRef(null);
 
 	const flipAvatarCard = () => {
-		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
-		gsap.to(avatarCard.current, { rotationY: 90, duration: 1, delay: 1 });
+		// gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
+		// gsap.to(avatarCard.current, { rotationY: 90, duration: 1, delay: 1 });
 		gsap.to(avatarCard.current, {
 			backgroundImage: `url('/images/mikeFykeAvatar.jpeg')`,
 			duration: 0,
 		});
-		gsap.to(avatarCard.current, { rotationY: 90, duration: 1, delay: 2 });
+		// gsap.to(avatarCard.current, { rotationY: 90, duration: 1, delay: 2 });
 	};
 
 	useEffect(() => {}, []);
