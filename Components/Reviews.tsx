@@ -3,7 +3,7 @@ import ReviewSlider from "./ReviewSlider";
 
 const Reviews = () => {
 	return (
-		<div className="bg-[#121121] pt-[4rem] md:pt-[8rem] pb-[1rem]">
+		<div className="bg-[#2B445E] pt-[4rem] md:pt-[8rem] pb-[1rem]">
 			<h1 className="heading">
 				Employer <span className="text-red-500">Reviews</span>
 			</h1>
