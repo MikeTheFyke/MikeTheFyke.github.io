@@ -15,7 +15,7 @@ const Hero = () => {
 		gsap.to(avatarCardImage1.current, { rotationY: 90, duration: 2 });
 		// gsap.to(avatarCard.current, { rotationY: 91, duration: 1, delay: 1 });
 		gsap.set(avatarCardImage1.current, {
-			rotationY: -90,
+			rotationY: 180,
 			duration: 1,
 			backgroundImage: currentAvatar,
 			delay: 1,
