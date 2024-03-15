@@ -89,7 +89,7 @@ const Hero = () => {
 				</div>
 				<div
 					className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%] cursor-pointer"
-					onClick={() => flipAvatarCard()}
+					// onClick={() => flipAvatarCard()}
 					ref={avatarCard}
 				>
 					<div
@@ -97,7 +97,19 @@ const Hero = () => {
 						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
 						id={"card01"}
 						style={{
-							backgroundImage: currentAvatar,
+							backgroundImage: `url('/images/MikeFyke-Gen01.jpeg')`,
+							backgroundRepeat: "no-repeat",
+							backgroundSize: "cover",
+							backgroundPosition: "center",
+						}}
+						ref={avatarCardImage1}
+					></div>
+					<div
+						data-aos="zoom-in"
+						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
+						id={"card01"}
+						style={{
+							backgroundImage: `url('/images/mikeFykeAvatar.jpeg')`,
 							backgroundRepeat: "no-repeat",
 							backgroundSize: "cover",
 							backgroundPosition: "center",
