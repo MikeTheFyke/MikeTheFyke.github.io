@@ -29,7 +29,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
 					CONTACT
 				</a>
 			</div>
-			<div className="nav-link-hamburger" onClick={closeNav}>
+			<div className="nav-link-mobile-close" onClick={closeNav}>
 				<XMarkIcon />
 			</div>
 		</div>

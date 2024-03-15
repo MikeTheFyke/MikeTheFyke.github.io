@@ -21,7 +21,7 @@
 		after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
 		drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
 	}
-	.nav-link-hamburger {
+	.nav-link-mobile-close {
 		@apply absolute cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-red-500;
 	}
 	.nav-fyke-header {
