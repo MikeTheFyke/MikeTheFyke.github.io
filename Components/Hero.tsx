@@ -14,6 +14,10 @@ const Hero = () => {
 		// gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
 		// gsap.to(avatarCard.current, { rotationY: 90, duration: 1, delay: 1 });
 		gsap.to(avatarCard.current, {
+			backgroundImage: "",
+			duration: 0,
+		});
+		gsap.to(avatarCard.current, {
 			backgroundImage: `url('/images/mikeFykeAvatar.jpeg')`,
 			duration: 0,
 		});
