@@ -26,7 +26,7 @@ const About = () => {
 					</h2>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
 						<div style={{ width: "50px", height: "50px" }} onMouseOver={() => onHover(plusSlate1)} onMouseLeave={() => onLeave(plusSlate1)}>
-							<span ref={plusSlate1} className="w-[50px] hidden md:block h-[5px] text-slate-200 rounded-sm"></span>
+							<span ref={plusSlate1} className="w-[50px] hidden md:block h-[5px] bg-[#EFEFEF] rounded-sm"></span>
 						</div>
 						<p className="text-[19px] text-[#EFEFEF] w-[80%]">
 							Make users feel like they are experiencing a website instead of just viewing it, with micro-interactions.
@@ -34,7 +34,7 @@ const About = () => {
 					</div>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
 						<div style={{ width: "50px", height: "50px" }} onMouseOver={() => onHover(plusSlate2)} onMouseLeave={() => onLeave(plusSlate2)}>
-							<span ref={plusSlate2} className="w-[50px] hidden md:block h-[5px] text-slate-200 rounded-sm"></span>
+							<span ref={plusSlate2} className="w-[50px] hidden md:block h-[5px] bg-[#EFEFEF] rounded-sm"></span>
 						</div>
 						<p className="text-[19px] text-[#EFEFEF] w-[80%]">
 							Guidlines can be like a fence around a yard. Some people can feel contained and stay firmly in the middle of the yard,
