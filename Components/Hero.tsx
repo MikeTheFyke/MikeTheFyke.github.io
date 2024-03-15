@@ -17,7 +17,7 @@ const Hero = () => {
 		tl.to(avatarCardImage1.current, 0, {
 			backgroundImage:
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
-			delay: 0.5,
+			delay: 0.75,
 		});
 		tl.to(avatarCard.current, 0.5, { rotationY: 0 });
 		nextImage();
