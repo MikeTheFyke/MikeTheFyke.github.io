@@ -13,18 +13,27 @@ const Hero = () => {
 			{/* <Particle /> */}
 			<div className="w-[80%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:gap-[1rem] md:gap-[1.5rem] lg:gap-[3rem] h-[90%] md:h-[100%] lg:h-[100%] items-center">
 				<div className="sm:w-[100%] sm:mt-[rem] md:hidden lg:hidden flex justify-center items-center">
-					<div data-aos="zoom-in" className="h-[250px] w-[250px] relative items-center rounded-full md:hidden lg:hidden">
-						<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
+					<div
+						data-aos="zoom-in"
+						className="h-[250px] w-[250px] relative items-center rounded-full md:hidden lg:hidden"
+					>
+						<Image
+							src="/images/MikeFyke-Gen01.jpeg"
+							alt="user"
+							layout="fill"
+							className="object-cover rounded-full"
+						/>
 					</div>
 				</div>
 				<div>
-					<h1 className="text-[35px] md:text-[50px] text-white font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-						Hey Hey! <span className="text-red-500">It's me Mike!</span>
-					</h1>
+					<h1 className="hero-heading">Hey Hey!</h1>
+					<span className="hero-heading text-red-500">It's me Mike!</span>
 					<TextEffect />
 					<p className="mt-[1.5rem] text-[18px] text-[#ABABAB]">
-						An artistically trained full stack web developer, passionate in creating a unique user experience within the web environment. A
-						quick learner when adapting to new languages and technologies, with a team-conscious approach.
+						An artistically trained full stack web developer, passionate in
+						creating a unique user experience within the web environment. A
+						quick learner when adapting to new languages and technologies, with
+						a team-conscious approach.
 					</p>
 					<div className="mt-[2rem] flex-col space-y-6 sm:space-y-o sm:flex sm:flex-row items-center sm:space-x-6">
 						<button
@@ -44,7 +53,10 @@ const Hero = () => {
 							}}
 						>
 							<a href="/MikeFyke-Resume.pdf">Download CV</a>
-							<ArrowDownTrayIcon id={"downloadIcon"} className="w-[1.6rem] h[1.7rem]" />
+							<ArrowDownTrayIcon
+								id={"downloadIcon"}
+								className="w-[1.6rem] h[1.7rem]"
+							/>
 						</button>
 					</div>
 				</div>
@@ -53,7 +65,12 @@ const Hero = () => {
 						data-aos="zoom-in"
 						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
 					>
-						<Image src="/images/MikeFyke-Gen01.jpeg" alt="user" layout="fill" className="object-cover rounded-full" />
+						<Image
+							src="/images/MikeFyke-Gen01.jpeg"
+							alt="user"
+							layout="fill"
+							className="object-cover rounded-full"
+						/>
 					</div>
 				</div>
 			</div>

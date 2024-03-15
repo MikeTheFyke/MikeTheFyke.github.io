@@ -30,6 +30,9 @@
 	.heading {
 		@apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
 	}
+	.hero-heading {
+		@apply text-[35px] md:text-[50px] text-white font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
+	}
 	.body-texts {
 		@apply text-[18px];
 	}
