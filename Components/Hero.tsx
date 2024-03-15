@@ -17,7 +17,7 @@ const Hero = () => {
 			backgroundImage: `url('/images/mikeFykeAvatar.jpeg')`,
 			duration: 0,
 		});
-		gsap.to(avatarCard.current, { rotationY: -90, duration: 1, delay: 2 });
+		gsap.to(avatarCard.current, { rotationY: 90, duration: 1, delay: 2 });
 	};
 
 	useEffect(() => {}, []);
@@ -97,6 +97,7 @@ const Hero = () => {
 							backgroundRepeat: "no-repeat",
 							backgroundSize: "cover",
 							backgroundPosition: "center",
+							borderRadius: "225px",
 						}}
 					>
 						{/* <Image
