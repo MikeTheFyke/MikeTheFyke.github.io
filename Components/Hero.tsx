@@ -23,7 +23,12 @@ const Hero = () => {
 				</div>
 				<div>
 					<h1 className="hero-heading">Hey Hey!</h1>
-					<span className="hero-heading text-red-500">It's me Mike!</span>
+					<span
+						className="hero-heading text-red-500"
+						style={{ whiteSpace: "nowrap", overflow: "hidden" }}
+					>
+						It's me Mike!
+					</span>
 					<div>
 						<TextEffect />
 					</div>
