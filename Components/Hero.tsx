@@ -12,22 +12,18 @@ const Hero = () => {
 	const [currentAvatar, setCurrentAvatar] = useState(avatarImage1);
 
 	const flipAvatarCard = () => {
-		gsap.to(avatarCardImage1.current, { rotationY: 90, duration: 2 });
-		// gsap.to(avatarCard.current, { rotationY: 91, duration: 1, delay: 1 });
-		gsap.set(avatarCardImage1.current, {
-			rotationY: 180,
-			duration: 1,
-			backgroundImage: currentAvatar,
-			delay: 1,
+		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
+		gsap.to(avatarCardImage1.current, {
+			backgroundImage:
+				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
+			duration: 0,
+			delay: 2,
 		});
+		gsap.to(avatarCard.current, { rotationY: 0, duration: 1, delay: 1 });
 		currentAvatar === avatarImage2
 			? setCurrentAvatar(avatarImage1)
 			: setCurrentAvatar(avatarImage2);
 	};
-
-	useEffect(() => {}, []);
-
-	useLayoutEffect(() => {}, []);
 
 	return (
 		<div id="Hero">
@@ -89,7 +85,7 @@ const Hero = () => {
 				</div>
 				<div
 					className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%] cursor-pointer"
-					// onClick={() => flipAvatarCard()}
+					onClick={() => flipAvatarCard()}
 					ref={avatarCard}
 				>
 					<div
@@ -97,25 +93,21 @@ const Hero = () => {
 						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
 						id={"card01"}
 						style={{
-							backgroundImage: `url('/images/MikeFyke-Gen01.jpeg')`,
+							backgroundImage: currentAvatar,
 							backgroundRepeat: "no-repeat",
 							backgroundSize: "cover",
 							backgroundPosition: "center",
 						}}
 						ref={avatarCardImage1}
-					></div>
-					<div
-						data-aos="zoom-in"
-						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
-						id={"card01"}
-						style={{
-							backgroundImage: `url('/images/mikeFykeAvatar.jpeg')`,
-							backgroundRepeat: "no-repeat",
-							backgroundSize: "cover",
-							backgroundPosition: "center",
-						}}
-						ref={avatarCardImage1}
-					></div>
+					>
+						{/* <Image
+							src="/images/MikeFyke-Gen01.jpeg"
+							alt="user"
+							layout="fill"
+							className="object-cover rounded-full"
+							ref={avatarCardImage1}
+						/> */}
+					</div>
 				</div>
 			</div>
 		</div>
