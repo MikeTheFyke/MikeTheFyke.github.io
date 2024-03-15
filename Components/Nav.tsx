@@ -23,12 +23,12 @@ const Nav = ({ openNav }: Props) => {
 		gsap.to(navLinkProjects.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkExperience.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkContact.current, { scaleX: 0, scaleY: 0, duration: 0 });
-		gsap.to(navMain.current, { x: 0, duration: 2, display: "block" });
-		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 2.75 });
-		gsap.to(navLinkSkills.current, { scaleX: `100%`, scaleY: `100%`, delay: 2 });
-		gsap.to(navLinkProjects.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.25 });
-		gsap.to(navLinkExperience.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.5 });
-		gsap.to(navLinkContact.current, { scaleX: `100%`, scaleY: `100%`, delay: 2.75 });
+		gsap.to(navMain.current, { x: 0, duration: 1, display: "block" });
+		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 2.25 });
+		gsap.to(navLinkSkills.current, { scaleX: `100%`, scaleY: `100%`, delay: 1.25 });
+		gsap.to(navLinkProjects.current, { scaleX: `100%`, scaleY: `100%`, delay: 1.5 });
+		gsap.to(navLinkExperience.current, { scaleX: `100%`, scaleY: `100%`, delay: 1.75 });
+		gsap.to(navLinkContact.current, { scaleX: `100%`, scaleY: `100%`, delay: 2 });
 	};
 
 	useLayoutEffect(() => {
@@ -36,7 +36,7 @@ const Nav = ({ openNav }: Props) => {
 	}, []);
 
 	return (
-		<div ref={navMain} className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#ABABAB] shadow-md">
+		<div ref={navMain} className="w-[100%] fixed z-[10000] top-0 lg:h-[116px] md:h-[116px] bg-[#ABABAB] shadow-md">
 			<div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
 				<div ref={navFyke} style={{ display: "hidden" }}>
 					<a href="#Hero" className="mr-[4rem]">
