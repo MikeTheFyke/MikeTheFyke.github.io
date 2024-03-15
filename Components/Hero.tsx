@@ -97,7 +97,6 @@ const Hero = () => {
 							backgroundRepeat: "no-repeat",
 							backgroundSize: "cover",
 							backgroundPosition: "center",
-							borderRadius: "225px",
 						}}
 						ref={avatarCardImage1}
 					>
