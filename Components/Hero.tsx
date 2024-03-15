@@ -19,7 +19,7 @@ const Hero = () => {
 		// gsap.to(avatarCard.current, { rotationY: 91, duration: 1, delay: 1 });
 		gsap.from(avatarCardImage1.current, {
 			backgroundImage: currentAvatar,
-			delay: 1,
+			delay: 0.5,
 		});
 	};
 
