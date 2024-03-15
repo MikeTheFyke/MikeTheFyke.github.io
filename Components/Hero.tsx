@@ -1,16 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import Particle from "./Particle";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 
 const Hero = () => {
-	//  h-[250px] w-[100px]
-
 	return (
-		<div className="h-[88vh] bg-[#EFEFEF] mt-[12vh]" id="Hero">
-			{/* <Particle /> */}
+		<div id="Hero">
 			<div className="w-[80%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:gap-[1rem] md:gap-[1.5rem] lg:gap-[3rem] h-[90%] md:h-[100%] lg:h-[100%] items-center">
 				<div className="sm:w-[100%] sm:mt-[rem] md:hidden lg:hidden flex justify-center items-center">
 					<div
