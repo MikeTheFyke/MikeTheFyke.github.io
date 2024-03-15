@@ -9,7 +9,7 @@ const Hero = () => {
 	const avatarCard = useRef(null);
 
 	const flipAvatarCard = () => {
-		gsap.to(avatarCard.current, { rotationY: 180, duration: 1 });
+		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
 	};
 
 	return (
@@ -71,8 +71,8 @@ const Hero = () => {
 					</div>
 				</div>
 				<div
-					className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%]"
-					onMouseOver={() => flipAvatarCard()}
+					className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%] cursor-pointer"
+					// onMouseOver={() => flipAvatarCard()}
 					onClick={() => flipAvatarCard()}
 					ref={avatarCard}
 				>
