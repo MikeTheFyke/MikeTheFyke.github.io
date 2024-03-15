@@ -6,31 +6,18 @@ import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import { gsap } from "gsap";
 
 const Hero = () => {
-	const avatarCard1 = useRef(null);
-	const avatarCard2 = useRef(null);
+	const avatarCard = useRef(null);
 	const avatarCardImage1 = useRef(null);
 	const avatarCardImage2 = useRef(null);
 
 	const flipAvatarCard = () => {
-		gsap.to(avatarCard1.current, { rotationY: 90, duration: 1 });
-		gsap.to(avatarCard1.current, { rotationY: 90, duration: 1, delay: 1 });
-		gsap.to(avatarCard2.current, {
-			display: "block",
-			rotationY: -90,
-			duration: 1,
-			delay: 1,
-		});
+		gsap.to(avatarCard.current, { rotationY: 90, duration: 1 });
+		gsap.to(avatarCard.current, { rotationY: 90, duration: 1, delay: 1 });
 	};
 
 	useEffect(() => {}, []);
 
-	useLayoutEffect(() => {
-		gsap.to(avatarCard2.current, {
-			rotationY: 90,
-			duration: 0,
-			display: "hidden",
-		});
-	}, []);
+	useLayoutEffect(() => {}, []);
 
 	return (
 		<div id="Hero">
@@ -94,40 +81,26 @@ const Hero = () => {
 					className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%] cursor-pointer"
 					// onMouseOver={() => flipAvatarCard()}
 					onClick={() => flipAvatarCard()}
-					ref={avatarCard1}
+					ref={avatarCard}
 				>
 					<div
 						data-aos="zoom-in"
 						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
 						id={"card01"}
 					>
-						<Image
+						<div
+							style={{
+								backgroundImage: "/images/MikeFyke-Gen01.jpeg",
+								backgroundRepeat: "no-repeat",
+							}}
+						></div>
+						{/* <Image
 							src="/images/MikeFyke-Gen01.jpeg"
 							alt="user"
 							layout="fill"
 							className="object-cover rounded-full"
 							ref={avatarCardImage1}
-						/>
-					</div>
-					<div
-						className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%] cursor-pointer"
-						// onMouseOver={() => flipAvatarCard()}
-						onClick={() => flipAvatarCard()}
-						ref={avatarCard2}
-					>
-						<div
-							data-aos="zoom-in"
-							className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
-							id={"card02"}
-						>
-							<Image
-								src="/images/mikeFykeAvatar.jpeg"
-								alt="user"
-								layout="fill"
-								className="object-cover rounded-full"
-								ref={avatarCardImage2}
-							/>
-						</div>
+						/> */}
 					</div>
 				</div>
 			</div>
