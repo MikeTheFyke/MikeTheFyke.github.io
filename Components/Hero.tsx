@@ -17,7 +17,7 @@ const Hero = () => {
 			duration: 0,
 			delay: 1,
 		});
-		gsap.to(avatarCard.current, { rotationY: -90, duration: 1, delay: 1 });
+		gsap.to(avatarCard.current, { rotationY: 0, duration: 1, delay: 1 });
 	};
 
 	useEffect(() => {}, []);
