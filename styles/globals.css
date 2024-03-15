@@ -4,15 +4,28 @@
 @tailwind utilities;
 
 @layer components {
+	.nav-main-container {
+		@apply w-[100%] fixed z-[10000] top-0 lg:h-[116px] md:h-[116px] bg-[#ABABAB] shadow-md;
+	}
+	.nav-inner-container {
+		@apply flex items-center justify-between w-[80%] mx-auto h-[100%];
+	}
 	.nav-link {
-		@apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block after:content-[''] 
+		@apply relative font-semibold text-white cursor-pointer text-[18px] w-fit md:block after:block after:content-[''] 
 		after:absolute after:h-[3px] after:bg-red-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition 
 		after:duration-300 after:origin-center hidden drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
 	}
 	.nav-link-mobile {
-		@apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block 
+		@apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[25px] w-fit md:block after:block 
 		after:content-[''] after:absolute after:h-[3px] after:bg-red-600 after:w-full after:scale-x-0 
-		after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+		after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
+		drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
+	}
+	.nav-link-hamburger {
+		@apply absolute cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-red-500;
+	}
+	.nav-fyke-header {
+		@apply flex-[0.6] cursor-pointer text-[25px] font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
 	}
 	.heading {
 		@apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
