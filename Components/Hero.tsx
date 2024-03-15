@@ -16,7 +16,7 @@ const Hero = () => {
 		gsap.to(avatarCardImage1.current, {
 			backgroundImage:
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
-			duration: 0,
+			duration: 1,
 			delay: 2,
 		});
 		gsap.to(avatarCard.current, { rotationY: 0, duration: 1, delay: 1 });
@@ -89,7 +89,6 @@ const Hero = () => {
 				</div>
 				<div
 					className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%] cursor-pointer"
-					// onMouseOver={() => flipAvatarCard()}
 					onClick={() => flipAvatarCard()}
 					ref={avatarCard}
 				>
@@ -104,15 +103,7 @@ const Hero = () => {
 							backgroundPosition: "center",
 						}}
 						ref={avatarCardImage1}
-					>
-						{/* <Image
-							src="/images/MikeFyke-Gen01.jpeg"
-							alt="user"
-							layout="fill"
-							className="object-cover rounded-full"
-							ref={avatarCardImage1}
-						/> */}
-					</div>
+					></div>
 				</div>
 			</div>
 		</div>
