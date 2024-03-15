@@ -25,10 +25,26 @@ const Nav = ({ openNav }: Props) => {
 		gsap.to(navLinkContact.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navMain.current, { x: 0, duration: 1, display: "block" });
 		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 2.25 });
-		gsap.to(navLinkSkills.current, { scaleX: `100%`, scaleY: `100%`, delay: 1.25 });
-		gsap.to(navLinkProjects.current, { scaleX: `100%`, scaleY: `100%`, delay: 1.5 });
-		gsap.to(navLinkExperience.current, { scaleX: `100%`, scaleY: `100%`, delay: 1.75 });
-		gsap.to(navLinkContact.current, { scaleX: `100%`, scaleY: `100%`, delay: 2 });
+		gsap.to(navLinkSkills.current, {
+			scaleX: `100%`,
+			scaleY: `100%`,
+			delay: 1.25,
+		});
+		gsap.to(navLinkProjects.current, {
+			scaleX: `100%`,
+			scaleY: `100%`,
+			delay: 1.5,
+		});
+		gsap.to(navLinkExperience.current, {
+			scaleX: `100%`,
+			scaleY: `100%`,
+			delay: 1.75,
+		});
+		gsap.to(navLinkContact.current, {
+			scaleX: `100%`,
+			scaleY: `100%`,
+			delay: 2,
+		});
 	};
 
 	useLayoutEffect(() => {
@@ -36,7 +52,10 @@ const Nav = ({ openNav }: Props) => {
 	}, []);
 
 	return (
-		<div ref={navMain} className="w-[100%] fixed z-[10000] top-0 lg:h-[116px] md:h-[116px] bg-[#ABABAB] shadow-md">
+		<div
+			ref={navMain}
+			className="w-[100%] fixed z-[10000] top-0 lg:h-[116px] md:h-[116px] bg-[#ABABAB] shadow-md"
+		>
 			<div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
 				<div ref={navFyke} style={{ display: "hidden" }}>
 					<a href="#Hero" className="mr-[4rem]">
@@ -47,22 +66,22 @@ const Nav = ({ openNav }: Props) => {
 					</a>
 				</div>
 				<div ref={navLinkSkills}>
-					<a className="nav-link drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" href="#Skills">
+					<a className="nav-link" href="#Skills">
 						SKILLS
 					</a>
 				</div>
 				<div ref={navLinkProjects}>
-					<a className="nav-link drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" href="#Projects">
+					<a className="nav-link" href="#Projects">
 						PROJECTS
 					</a>
 				</div>
 				<div ref={navLinkExperience}>
-					<a className="nav-link drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" href="#Experience">
+					<a className="nav-link" href="#Experience">
 						EXPERIENCE
 					</a>
 				</div>
 				<div ref={navLinkContact}>
-					<a className="nav-link drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" href="#Contact">
+					<a className="nav-link" href="#Contact">
 						CONTACT
 					</a>
 				</div>
