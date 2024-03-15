@@ -50,9 +50,9 @@ const Homepage = () => {
 				<Hero />
 				<div className="relative z-[30]">
 					<About />
-					<Experience />
 					<Skills />
 					<Projects />
+					<Experience />
 					<Reviews />
 					{/* <Blog /> */}
 					<Contact />
