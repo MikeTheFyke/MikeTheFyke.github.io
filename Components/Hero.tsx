@@ -15,9 +15,9 @@ const Hero = () => {
 		const tl = gsap.timeline();
 		tl.to(avatarCardImage1.current, 0.5, { rotationY: 90 });
 		tl.to(avatarCardImage1.current, 0.5, {
-			rotationY: 0,
 			backgroundImage:
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
+			rotationY: 0,
 			delay: 1,
 		});
 		nextImage();
