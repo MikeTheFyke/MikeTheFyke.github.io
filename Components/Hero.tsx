@@ -87,15 +87,13 @@ const Hero = () => {
 						data-aos="zoom-in"
 						className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
 						id={"card01"}
+						style={{
+							backgroundImage: `url('/images/MikeFyke-Gen01.jpeg')`,
+							backgroundRepeat: "no-repeat",
+							backgroundSize: "cover",
+							backgroundPosition: "center",
+						}}
 					>
-						<div
-							style={{
-								backgroundImage: `url('/images/MikeFyke-Gen01.jpeg')`,
-								backgroundRepeat: "no-repeat",
-								backgroundSize: "cover",
-								backgroundPosition: "center",
-							}}
-						></div>
 						{/* <Image
 							src="/images/MikeFyke-Gen01.jpeg"
 							alt="user"
