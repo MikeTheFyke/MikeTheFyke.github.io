@@ -57,11 +57,11 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-[80%] mt-[2rem] mx-auto">
-				<div className="w-[175px] md:w-[360px] lg:w-[360px] text-[18px] mb-[2rem] md:mb-0 justify-start text-white bg-blue-500 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+			<div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-between">
+				<div className="w-[175px] md:w-[360px] lg:w-[360px] text-[18px] mb-[2rem] md:mb-0 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 					Mike Fyke 2024 | All Rights Reserved
 				</div>
-				<div className="flex items-center space-x-10 bg-red-600 w-[145px] justify-end">
+				<div className="flex items-center space-x-10 w-[145px]">
 					<Image
 						onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
 						src={"/images/GithubAvatar.png"}
