@@ -57,30 +57,32 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-[80%] mt-[2rem] mx-auto flex items-center justify-between">
-				<div className="text-[18px] mb-[2rem] md:mb-0 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+			<div className="w-[80%] mt-[2rem] mx-auto flex grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-between">
+				<div className="w-[80%] text-[18px] mb-[2rem] md:mb-0 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 					Mike Fyke 2024 | All Rights Reserved
 				</div>
-				<Image
-					onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
-					src={"/images/GithubAvatar.png"}
-					alt={"github"}
-					width={50}
-					height={50}
-					objectFit="contain"
-					className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-				/>
-				<Image
-					onClick={() =>
-						openNewTab("https://www.linkedin.com/in/mike-fyke-5b4a5aa0/")
-					}
-					src={"/images/LinkedinAvatar.png"}
-					alt={"linkedin"}
-					width={50}
-					height={50}
-					objectFit="contain"
-					className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-				/>
+				<div className="w-[20%]">
+					<Image
+						onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
+						src={"/images/GithubAvatar.png"}
+						alt={"github"}
+						width={50}
+						height={50}
+						objectFit="contain"
+						className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+					/>
+					<Image
+						onClick={() =>
+							openNewTab("https://www.linkedin.com/in/mike-fyke-5b4a5aa0/")
+						}
+						src={"/images/LinkedinAvatar.png"}
+						alt={"linkedin"}
+						width={50}
+						height={50}
+						objectFit="contain"
+						className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+					/>
+				</div>
 			</div>
 		</div>
 	);
