@@ -5,7 +5,7 @@ import SkillsItem from "./SkillsItem";
 const Skills = () => {
 	return (
 		<div className="pt-[4rem] md:pt-[8rem] pb-[5rem] bg-[#efefef]" id="Skills">
-			<h1 className="heading">
+			<h1 className="heading drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 				EDUCATION & <span className="text-red-500">Skills</span>
 			</h1>
 			<div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
