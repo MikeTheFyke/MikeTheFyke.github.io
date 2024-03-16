@@ -8,7 +8,7 @@ interface Props {
 const SkillsLanguage = ({ skills, title }: Props) => {
 	return (
 		<div>
-			<div className="mb-[3rem]">
+			<div className="mb-[1rem]">
 				<h1 className="p-5 pb-0 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold uppercase">
 					{title}
 				</h1>
