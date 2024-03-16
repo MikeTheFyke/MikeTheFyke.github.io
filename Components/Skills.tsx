@@ -42,7 +42,7 @@ const Skills = () => {
 					title="Databases"
 				/>
 				<SkillsLanguage
-					skills="AdobeCS, HTMLS5Canvas, AutoCad, Blender, ThreeJs, Drawing, Painting, Typography, Web Design, Graphic Design, Photography"
+					skills="AdobeCS, HTML5Canvas, AutoCad, Blender, ThreeJs, Drawing, Painting, Typography, Web Design, Graphic Design, Photography"
 					title="Other Skills"
 				/>
 			</div>
