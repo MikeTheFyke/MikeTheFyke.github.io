@@ -61,7 +61,7 @@ const Contact = () => {
 				<div className="w-[60%] text-[18px] mb-[2rem] md:mb-0 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 					Mike Fyke 2024 | All Rights Reserved
 				</div>
-				<div className="w-[20%] block">
+				<div className="flex items-center space-x-10 bg-red-600">
 					<Image
 						onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
 						src={"/images/GithubAvatar.png"}
