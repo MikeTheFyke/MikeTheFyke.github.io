@@ -14,7 +14,7 @@ const Contact = () => {
 
 	return (
 		<div className="pt-[8rem] pb-[4rem] bg-[#ABABAB]" id="Contact">
-			<div className="grid pb-[6rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[90%] mx-auto gap-[3rem]">
+			<div className="grid pb-[1rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[90%] mx-auto gap-[3rem]">
 				<div className="flex items-center space-x-6">
 					<div className="md:w-[6rem] md:h-[6rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
 						<EnvelopeIcon className="md:w-[4rem] md:h-[4rem] w-[3.5rem] h-[3.5rem] text-black" />
@@ -57,11 +57,11 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-between">
-				<div className="w-[60%] text-[18px] mb-[2rem] md:mb-0 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+			<div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-items-stretch">
+				<div className="w-[80%] text-[18px] mb-[2rem] md:mb-0 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 					Mike Fyke 2024 | All Rights Reserved
 				</div>
-				<div className="flex items-center space-x-10 bg-red-600">
+				<div className="flex items-center space-x-10 bg-red-600 w-[40%]">
 					<Image
 						onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
 						src={"/images/GithubAvatar.png"}
