@@ -17,7 +17,7 @@ const Contact = () => {
 			<div className="grid pb-[1rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[90%] mx-auto gap-[3rem]">
 				<div className="flex items-center space-x-8">
 					<div className="md:w-[6rem] md:h-[6rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
-						<EnvelopeIcon className="md:w-[4rem] md:h-[4rem] w-[3.5rem] h-[3.5rem] text-black" />
+						<EnvelopeIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
 					<div>
 						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
@@ -31,7 +31,7 @@ const Contact = () => {
 
 				<div className="flex items-center space-x-6">
 					<div className="md:w-[6rem] md:h-[6rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
-						<DevicePhoneMobileIcon className="md:w-[4rem] md:h-[4rem] w-[3.5rem] h-[3.5rem] text-black" />
+						<DevicePhoneMobileIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
 					<div>
 						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
@@ -45,7 +45,7 @@ const Contact = () => {
 
 				<div className="flex items-center space-x-6">
 					<div className="md:w-[6rem] md:h-[6rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
-						<MapIcon className="md:w-[4rem] md:h-[4rem] w-[3.5rem] h-[3.5rem] text-black" />
+						<MapIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
 					<div>
 						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
