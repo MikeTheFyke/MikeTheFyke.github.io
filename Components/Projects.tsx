@@ -10,7 +10,8 @@ const Projects = () => {
 			<h1 className="heading drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 				Pro<span className="text-red-500">jects</span>
 			</h1>
-			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
+
+			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[2rem]">
 				<div>
 					<h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 						Better Bytes
