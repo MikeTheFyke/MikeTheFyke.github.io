@@ -62,6 +62,22 @@ const Projects = () => {
 				</div>
 				<div>
 					<h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+						Xpedia
+					</h1>
+					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
+						<Image
+							src="/images/Xpedia-Main.png"
+							alt="portfolio"
+							layout="fill"
+							className="object-contain"
+						/>
+					</div>
+					<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+						NodeJs, VueJs, GSAP
+					</h1>
+				</div>
+				<div>
+					<h1 className="mt-[2rem] uppercase font-semibold mb-[1rem] text-[20px] sm:text-[25px] md:text-[30px] text-white text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 						Chatter Box
 					</h1>
 					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
