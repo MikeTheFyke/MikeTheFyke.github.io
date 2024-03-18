@@ -17,12 +17,12 @@ const Projects = () => {
 						Better Bytes
 					</h1>
 					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-						<div className="rounded">
+						<div>
 							<Image
 								src="/images/BetterBytes-Main.jpeg"
 								alt="portfolio"
-								layout="fill"
 								className="object-contain"
+								style={{ borderRadius: "50px" }}
 							/>
 						</div>
 					</div>
