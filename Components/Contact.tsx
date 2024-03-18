@@ -37,14 +37,6 @@ const Contact = () => {
 							<MapIcon className="w-[3rem] h-[3rem] text-black" />
 						</a>
 					</div>
-					<div style={{ marginLeft: "10px" }}>
-						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-							Address
-						</h1>
-						<p className="text-[18px] w-[90%] text-white opacity-60 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-							Toronto, Ontario, Canada
-						</p>
-					</div>
 				</div>
 			</div>
 			<div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-between">
