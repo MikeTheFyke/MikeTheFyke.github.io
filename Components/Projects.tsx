@@ -24,7 +24,7 @@ const Projects = () => {
 						/>
 					</div>
 					<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold">
-						NodJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex,
+						NodeJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex,
 						Cheerio, Bootstrap
 					</h1>
 				</div>
