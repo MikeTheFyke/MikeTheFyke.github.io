@@ -34,7 +34,7 @@ const Projects = () => {
 					</h1>
 					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
-							src="/images/OwlSite-Main.png"
+							src="/images/OwlSite-Main.jpeg"
 							alt="portfolio"
 							layout="fill"
 							className="object-contain"
@@ -50,7 +50,7 @@ const Projects = () => {
 					</h1>
 					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
-							src="/images/ShrinkALink-Main.png"
+							src="/images/ShrinkALink-Main.jpeg"
 							alt="portfolio"
 							layout="fill"
 							className="object-contain"
@@ -66,7 +66,7 @@ const Projects = () => {
 					</h1>
 					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
-							src="/images/Xpedia-Main.png"
+							src="/images/Xpedia-Main.jpeg"
 							alt="portfolio"
 							layout="fill"
 							className="object-contain"
@@ -82,7 +82,7 @@ const Projects = () => {
 					</h1>
 					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
-							src="/images/ChatterBox-Main.png"
+							src="/images/ChatterBox-Main.jpeg"
 							alt="portfolio"
 							layout="fill"
 							className="object-contain"
@@ -98,7 +98,7 @@ const Projects = () => {
 					</h1>
 					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
-							src="/images/Tweeter-Main.png"
+							src="/images/Tweeter-Main.jpeg"
 							alt="portfolio"
 							layout="fill"
 							className="object-contain"
