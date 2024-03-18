@@ -15,7 +15,7 @@ const Contact = () => {
 	return (
 		<div className="pt-[8rem] pb-[4rem] bg-[#ABABAB]" id="Contact">
 			<div className="grid pb-[1rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[90%] mx-auto gap-[3rem]">
-				<div className="flex items-center space-x-8">
+				<div className="flex items-center">
 					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
 						<EnvelopeIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
@@ -29,7 +29,7 @@ const Contact = () => {
 					</div>
 				</div>
 
-				<div className="flex items-center space-x-6">
+				<div className="flex items-center">
 					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
 						<DevicePhoneMobileIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
@@ -43,7 +43,7 @@ const Contact = () => {
 					</div>
 				</div>
 
-				<div className="flex items-center space-x-6">
+				<div className="flex items-center">
 					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
 						<MapIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
