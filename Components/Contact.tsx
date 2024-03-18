@@ -51,9 +51,8 @@ const Contact = () => {
 							onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
 							src={"/images/GithubAvatar.png"}
 							alt={"github"}
-							width={50}
-							height={50}
 							objectFit="contain"
+							fill
 							className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
 						/>
 					</div>
@@ -67,9 +66,8 @@ const Contact = () => {
 							}
 							src={"/images/LinkedinAvatar.png"}
 							alt={"linkedin"}
-							width={50}
-							height={50}
 							objectFit="contain"
+							fill
 							className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
 						/>
 					</div>
