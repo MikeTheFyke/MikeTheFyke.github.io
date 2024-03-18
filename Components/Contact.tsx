@@ -33,7 +33,13 @@ const Contact = () => {
 
 				<div className="flex items-center">
 					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-						<a href="_blank, https://maps.google.com/?q= Toronto, Ontario, Canada">
+						<a
+							onClick={() =>
+								openNewTab(
+									"https://maps.google.com/?q= Toronto, Ontario, Canada"
+								)
+							}
+						>
 							<MapIcon className="w-[3rem] h-[3rem] text-black" />
 						</a>
 					</div>
