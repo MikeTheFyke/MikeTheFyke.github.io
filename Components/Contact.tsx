@@ -16,7 +16,7 @@ const Contact = () => {
 		<div className="pt-[4rem] pb-[4rem] bg-[#ABABAB]" id="Contact">
 			<div className="grid pb-[1rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-3 w-[90%] mx-auto gap-[3rem]">
 				<div className="flex items-center">
-					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
+					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF]">
 						<EnvelopeIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
 					<div style={{ marginLeft: "10px" }}>
@@ -30,7 +30,7 @@ const Contact = () => {
 				</div>
 
 				<div className="flex items-center">
-					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
+					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF]">
 						<DevicePhoneMobileIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
 					<div style={{ marginLeft: "10px" }}>
@@ -44,7 +44,7 @@ const Contact = () => {
 				</div>
 
 				<div className="flex items-center">
-					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
+					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF]">
 						<MapIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
 					<div style={{ marginLeft: "10px" }}>
