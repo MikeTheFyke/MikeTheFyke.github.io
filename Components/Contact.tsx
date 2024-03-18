@@ -17,20 +17,6 @@ const Contact = () => {
 			<div className="grid pb-[1rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-3 w-[90%] mx-auto gap-[3rem]">
 				<div className="flex items-center">
 					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
-						<EnvelopeIcon className="w-[3rem] h-[3rem] text-black" />
-					</div>
-					<div style={{ marginLeft: "10px" }}>
-						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-							Email
-						</h1>
-						<p className="text-[18px] w-[90%] text-white opacity-60 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-							mikefyke@hotmail.com
-						</p>
-					</div>
-				</div>
-
-				<div className="flex items-center">
-					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
 						<DevicePhoneMobileIcon className="w-[3rem] h-[3rem] text-black" />
 					</div>
 					<div style={{ marginLeft: "10px" }}>
@@ -39,6 +25,20 @@ const Contact = () => {
 						</h1>
 						<p className="text-[18px] w-[90%] text-white opacity-60 whitespace-nowrap drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 							1-705-808-1229
+						</p>
+					</div>
+				</div>
+
+				<div className="flex items-center">
+					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
+						<EnvelopeIcon className="w-[3rem] h-[3rem] text-black" />
+					</div>
+					<div style={{ marginLeft: "10px" }}>
+						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+							Email
+						</h1>
+						<p className="text-[18px] w-[90%] text-white opacity-60 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+							mikefyke@hotmail.com
 						</p>
 					</div>
 				</div>
