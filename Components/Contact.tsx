@@ -13,11 +13,11 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="pt-[8rem] pb-[4rem] bg-[#ABABAB]" id="Contact">
-			<div className="grid pb-[1rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[90%] mx-auto gap-[3rem]">
+		<div className="pt-[4rem] pb-[4rem] bg-[#ABABAB]" id="Contact">
+			<div className="grid pb-[1rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-3 w-[90%] mx-auto gap-[3rem]">
 				<div className="flex items-center">
 					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
-						<EnvelopeIcon className="w-[3rem] h-[3rem] text-black" />
+						<EnvelopeIcon className="w-[3rem] h-[3rem] mr-[0.5rem] text-black" />
 					</div>
 					<div>
 						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
@@ -31,7 +31,7 @@ const Contact = () => {
 
 				<div className="flex items-center">
 					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
-						<DevicePhoneMobileIcon className="w-[3rem] h-[3rem] text-black" />
+						<DevicePhoneMobileIcon className="w-[3rem] h-[3rem] mr-[0.5rem] text-black" />
 					</div>
 					<div>
 						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
@@ -45,7 +45,7 @@ const Contact = () => {
 
 				<div className="flex items-center">
 					<div className="w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#47B5E0]">
-						<MapIcon className="w-[3rem] h-[3rem] text-black" />
+						<MapIcon className="w-[3rem] h-[3rem] mr-[0.5rem] text-black" />
 					</div>
 					<div>
 						<h1 className="text-[25px] mb-[0.2rem] font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
