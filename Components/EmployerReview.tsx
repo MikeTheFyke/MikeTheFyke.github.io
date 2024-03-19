@@ -11,7 +11,7 @@ interface Props {
 
 const EmployerReview = ({ image, name, role, review }: Props) => {
 	return (
-		<div className="flex flex-col text-center justify-center pb-[20px] ">
+		<div className="flex flex-col text-center justify-center pb-[40px] ">
 			<Image
 				src={image}
 				alt={name}
