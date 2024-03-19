@@ -26,6 +26,7 @@ const ReviewSlider = () => {
 		<Carousel
 			additionalTransfrom={0}
 			autoPlay={true}
+			arrows={false}
 			autoPlaySpeed={5000}
 			centerMode={false}
 			infinite
