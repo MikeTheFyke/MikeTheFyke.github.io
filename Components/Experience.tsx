@@ -47,7 +47,7 @@ const Experience = () => {
 							<div className="space-y-3">
 								<div className="grid grid-cols-2 gap-4">
 									<div className="">
-										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2 list-disc drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+										<ul className="body-texts mt-[1.5rem] text-[#ABABAB] list-disc">
 											<li>Fixed/reported bugs.</li>
 											<li>Built new features.</li>
 											<li>Improved old features.</li>
@@ -90,7 +90,7 @@ const Experience = () => {
 							<div className="space-y-3">
 								<div className="grid grid-cols-2 gap-4">
 									<div className="">
-										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2 list-disc drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+										<ul className="body-texts mt-[1.5rem] text-[#ABABAB] list-disc">
 											<li>Fixed/reported bugs</li>
 											<li>Built new features</li>
 											<li>Improved old features</li>
