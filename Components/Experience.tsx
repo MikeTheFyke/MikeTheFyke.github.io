@@ -5,7 +5,6 @@ import {
 } from "@heroicons/react/20/solid";
 import React from "react";
 import Image from "next/image";
-import { map } from "lodash";
 
 interface Job {
 	icon: string;
@@ -46,7 +45,7 @@ const Experience = () => {
 		},
 	];
 
-	map(experience, (item) => console.log("Item : ", item.company));
+	// map(experience, (item) => console.log("Item : ", item.company));
 
 	const openNewTab = (url: string): void => {
 		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
