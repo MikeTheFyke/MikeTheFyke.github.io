@@ -13,12 +13,13 @@ const Hero = () => {
 
 	const flipAvatarCard = () => {
 		const tl = gsap.timeline();
-		tl.to(avatarCardImage1.current, 0.5, { rotationY: 90 });
-		tl.to(avatarCardImage1.current, 0.5, {
+		tl.to(avatarCardImage1.current, { rotationY: 90, duration: 0.5 });
+		tl.to(avatarCardImage1.current, {
 			backgroundImage:
 				currentAvatar === avatarImage2 ? avatarImage1 : avatarImage2,
 			rotationY: 0,
 			delay: 1,
+			duration: 0.5,
 		});
 		nextImage();
 	};
