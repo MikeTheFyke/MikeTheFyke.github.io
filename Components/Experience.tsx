@@ -55,7 +55,7 @@ const Experience = () => {
 										</ul>
 									</div>
 									<div className="">
-										<ul className="text-[15px] text-[#e8e7e7] font-normal pl-2 list-disc drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+										<ul className="body-texts mt-[1.5rem] text-[#ABABAB] list-disc">
 											<li>Built an avatar upload feature.</li>
 											<li>Built an internal integration portal.</li>
 											<li>Managed a frontend team.</li>
