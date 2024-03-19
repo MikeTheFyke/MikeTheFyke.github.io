@@ -45,7 +45,9 @@ const Experience = () => {
 		},
 	];
 
-	// map(experience, (item) => console.log("Item : ", item.company));
+	experience.map((item) => {
+		console.log(item.company);
+	});
 
 	const openNewTab = (url: string): void => {
 		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
