@@ -33,7 +33,6 @@ const ReviewSlider = () => {
 			responsive={responsive}
 			itemClass="item"
 			showDots={true}
-			renderDotsOutside={true}
 		>
 			<EmployerReview
 				image="/images/DianaAvatar-Gen01.jpeg"
