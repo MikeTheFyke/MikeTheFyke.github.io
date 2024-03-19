@@ -25,13 +25,13 @@ const ReviewSlider = () => {
 	return (
 		<Carousel
 			additionalTransfrom={0}
-			arrows={true}
 			autoPlay={true}
 			autoPlaySpeed={5000}
 			centerMode={false}
 			infinite
 			responsive={responsive}
 			itemClass="item"
+			showDots={true}
 		>
 			<EmployerReview
 				image="/images/DianaAvatar-Gen01.jpeg"
