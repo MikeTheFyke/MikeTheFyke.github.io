@@ -63,7 +63,7 @@ const Experience = () => {
 				{experience.map((item) => {
 					return (
 						<div
-							className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem]"
+							className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto cursor-pointer mt-[2rem]"
 							onClick={item.link ? () => openNewTab(item.link) : undefined}
 							key="item.company"
 						>
