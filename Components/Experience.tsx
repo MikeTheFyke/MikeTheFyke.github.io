@@ -76,7 +76,7 @@ const Experience = () => {
 								<div className="flex-1 space-y-6 py-1">
 									<div>
 										<h1 className="text-[20px] md:text-[30px] mt-[.25rem]  text-slate-700 font-bold">
-											${item.company}
+											{item.company}
 										</h1>
 										<h1 className="text-[20px] md:text-[18px] text-slate-700 font-semibold">
 											{item.jobTitle}
