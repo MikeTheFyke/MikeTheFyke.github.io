@@ -91,7 +91,7 @@ const Experience = () => {
 											{item.jobTitle}
 										</h1>
 										<h1
-											className="text-[20px] md:text-[18px]"
+											className="text-[20px] md:text-[18px] whitespace-nowrap"
 											style={{ color: Color.BACKGROUND_WHITE }}
 										>
 											{item.length}
