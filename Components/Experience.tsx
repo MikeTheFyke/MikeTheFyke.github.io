@@ -69,10 +69,46 @@ const Experience = () => {
 						>
 							<div className="flex space-x-4">
 								<Image
-									src="/images/123Loadboard.png"
+									src={item.icon}
 									alt="companyAvatar"
 									className="w-[4rem] h-[4em] mx-auto"
 								/>
+								<div className="flex-1 space-y-6 py-1">
+									<div>
+										<h1 className="text-[20px] md:text-[30px] mt-[.25rem]  text-slate-700 font-bold">
+											`${item.company}`
+										</h1>
+										<h1 className="text-[20px] md:text-[18px] text-slate-700 font-semibold">
+											`${item.jobTitle}`
+										</h1>
+										<h1 className="text-[20px] md:text-[18px] text-slate-700">
+											`${item.length}`
+										</h1>
+									</div>
+									<div className="space-y-3">
+										<div className="grid grid-cols-2 gap-4">
+											<div className="">
+												<ul className="body-texts mt-[1.5rem] text-[#ABABAB] list-disc">
+													{item.tasks.map((task) => {
+														return <li key="task">`${task}`</li>;
+													})}
+													{/* <li>Fixed/reported bugs.</li>
+													<li>Built new features.</li>
+													<li>Improved old features.</li>
+													<li>Took part in code reviews.</li>
+												</ul>
+											</div>
+											<div className="">
+												<ul className="body-texts mt-[1.5rem] text-[#ABABAB] list-disc">
+													<li>Built an avatar upload feature.</li>
+													<li>Built an internal integration portal.</li>
+													<li>Managed a frontend team.</li>
+													<li>Took part in integration meetings.</li> */}
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					);
