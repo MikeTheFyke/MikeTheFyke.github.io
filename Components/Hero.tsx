@@ -1,11 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
-// eslint-disable-next-line react/no-unescaped-entities
 import React, { useRef, useState } from "react";
-import TextEffect from "./TextEffect";
 import Image from "next/image";
-import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import { gsap } from "gsap";
-import { Color } from "../Color.js";
+import HeroHeader from "./Partials/HeroHeader";
 
 const Hero = () => {
 	const avatarCard = useRef(null);
@@ -23,10 +19,6 @@ const Hero = () => {
 			rotationY: 0,
 			delay: 1,
 		});
-		nextImage();
-	};
-
-	const nextImage = () => {
 		currentAvatar === avatarImage2
 			? setCurrentAvatar(avatarImage1)
 			: setCurrentAvatar(avatarImage2);
@@ -34,7 +26,7 @@ const Hero = () => {
 
 	return (
 		<div id="Hero">
-			<div className="w-[80%] h-[90%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:gap-[1rem] md:gap-[2rem] lg:gap-[3rem] md:h-[100%] lg:h-[100%] items-center">
+			<div className="hero-main-container">
 				<div className="sm:w-[100%] sm:mt-[rem] md:hidden lg:hidden flex justify-center items-center">
 					<div
 						data-aos="zoom-in"
@@ -48,56 +40,7 @@ const Hero = () => {
 						/>
 					</div>
 				</div>
-				<div>
-					<h1 className="hero-heading">Hey Hey!</h1>
-					<span
-						className="hero-heading"
-						style={{
-							whiteSpace: "nowrap",
-							overflow: "hidden",
-							color: Color.MAIN_RED,
-						}}
-					>
-						It's me Mike!
-					</span>
-					<div>
-						<TextEffect />
-					</div>
-					<p
-						className="body-texts mt-[1.5rem] text-[#ABABAB]"
-						style={{ color: Color.TEXT_GRAY }}
-					>
-						An artistically trained full stack web developer, passionate in
-						creating a unique user experience within the web environment. A
-						quick learner when adapting to new languages and technologies, with
-						a team-conscious approach.
-					</p>
-					<div className="mt-[2rem] flex-col space-y-6 sm:space-y-o sm:flex sm:flex-row items-center sm:space-x-6">
-						<button
-							className="px-[2rem]  py-[1rem] text-[18px] font-bold uppercase text-black flex items-center space-x-2"
-							style={{ backgroundColor: Color.ACTION_BLUE }}
-							id="downloadButton"
-							onMouseOver={() => {
-								const icon = document.getElementById("downloadIcon");
-								if (icon) {
-									icon.style.color = "white";
-								}
-							}}
-							onMouseLeave={() => {
-								const icon = document.getElementById("downloadIcon");
-								if (icon) {
-									icon.style.color = "black";
-								}
-							}}
-						>
-							<a href="/MikeFyke-Resume.pdf">Download CV</a>
-							<ArrowDownTrayIcon
-								id={"downloadIcon"}
-								className="w-[1.6rem] h[1.7rem]"
-							/>
-						</button>
-					</div>
-				</div>
+				<HeroHeader />
 				<div
 					className="hidden md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center md:w-[100%] lg:w-[100%] cursor-pointer"
 					onClick={() => flipAvatarCard()}

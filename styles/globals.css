@@ -30,6 +30,9 @@
 	.heading {
 		@apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
 	}
+	.hero-main-container {
+		@apply w-[80%] h-[90%] grid-cols-1 mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:gap-[1rem] md:gap-[2rem] lg:gap-[3rem] md:h-[100%] lg:h-[100%] items-center;
+	}
 	.hero-heading {
 		@apply text-[35px] md:text-[50px] text-white font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
 	}
