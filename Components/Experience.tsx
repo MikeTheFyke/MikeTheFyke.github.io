@@ -98,18 +98,14 @@ const Experience = () => {
 										</h1>
 									</div>
 									<div className="space-y-1">
-										<div className="grid grid-cols-2 gap-4">
-											<div className="">
-												<ul
-													className="body-texts mt-[1.5rem] list-disc"
-													style={{ color: Color.BACKGROUND_WHITE }}
-												>
-													{item.tasks.map((task) => {
-														return <li key="task">{task}</li>;
-													})}
-												</ul>
-											</div>
-										</div>
+										<ul
+											className="body-texts mt-[1.5rem] list-disc"
+											style={{ color: Color.BACKGROUND_WHITE }}
+										>
+											{item.tasks.map((task) => {
+												return <li key="task">{task}</li>;
+											})}
+										</ul>
 									</div>
 								</div>
 							</div>
