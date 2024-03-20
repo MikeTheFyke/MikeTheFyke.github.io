@@ -3,7 +3,7 @@ import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import { gsap } from "gsap";
-const dictionary = require("./Color.js");
+import { Color } from "../Color.js";
 
 const Hero = () => {
 	const avatarCard = useRef(null);
@@ -53,7 +53,7 @@ const Hero = () => {
 						style={{
 							whiteSpace: "nowrap",
 							overflow: "hidden",
-							color: dictionary.Color.MAIN_RED,
+							color: Color.MAIN_RED,
 						}}
 					>
 						It's me Mike!
