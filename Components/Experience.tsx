@@ -61,7 +61,7 @@ const Experience = () => {
 			<p className="heading drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 				Exper<span style={{ color: Color.MAIN_RED }}>ience</span>
 			</p>
-			<div className="w-[80%] mx-auto items-center mt-[4rem grid-col-2 md:grid-col-1 gap-[2rem]">
+			<div className="w-[80%] mx-auto items-center mt-[4rem grid grid-col-2 md:grid-col-1 gap-[2rem]">
 				{experience.map((item) => {
 					return (
 						<div
