@@ -5,6 +5,7 @@ import {
 } from "@heroicons/react/20/solid";
 import React from "react";
 import Image from "next/image";
+import { Color } from "@/Color";
 
 interface Job {
 	icon: string;
@@ -64,6 +65,7 @@ const Experience = () => {
 					return (
 						<div
 							className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto cursor-pointer mt-[2rem]"
+							style={{ backgroundColor: Color.BACKGROUND_BLUE }}
 							onClick={item.link ? () => openNewTab(item.link) : undefined}
 							key="item.company"
 						>
