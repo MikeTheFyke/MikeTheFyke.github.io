@@ -1,4 +1,6 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
+// eslint-disable-next-line react/no-unescaped-entities
+import React, { useRef, useState } from "react";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
@@ -61,7 +63,10 @@ const Hero = () => {
 					<div>
 						<TextEffect />
 					</div>
-					<p className="body-texts mt-[1.5rem] text-[#ABABAB]">
+					<p
+						className="body-texts mt-[1.5rem] text-[#ABABAB]"
+						style={{ color: Color.TEXT_GRAY }}
+					>
 						An artistically trained full stack web developer, passionate in
 						creating a unique user experience within the web environment. A
 						quick learner when adapting to new languages and technologies, with
@@ -69,7 +74,8 @@ const Hero = () => {
 					</p>
 					<div className="mt-[2rem] flex-col space-y-6 sm:space-y-o sm:flex sm:flex-row items-center sm:space-x-6">
 						<button
-							className="px-[2rem]  py-[1rem] text-[18px] font-bold uppercase bg-[#47B5E0] text-black flex items-center space-x-2"
+							className="px-[2rem]  py-[1rem] text-[18px] font-bold uppercase text-black flex items-center space-x-2"
+							style={{ backgroundColor: Color.ACTION_BLUE }}
 							id="downloadButton"
 							onMouseOver={() => {
 								const icon = document.getElementById("downloadIcon");
@@ -108,15 +114,7 @@ const Hero = () => {
 							backgroundPosition: "center",
 						}}
 						ref={avatarCardImage1}
-					>
-						{/* <Image
-							src="/images/MikeFyke-Gen01.jpeg"
-							alt="user"
-							layout="fill"
-							className="object-cover rounded-full"
-							ref={avatarCardImage1}
-						/> */}
-					</div>
+					></div>
 				</div>
 			</div>
 		</div>
