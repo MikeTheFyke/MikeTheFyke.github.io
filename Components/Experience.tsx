@@ -21,6 +21,7 @@ const Experience = () => {
 			company: "123Loadboard",
 			jobTitle: "Frontend Developer",
 			length: "April 2021 - January 2024",
+			link: "https://www.123loadboard.com",
 			tasks: [
 				"Fixed/reported bugs.",
 				"Built new features.",
@@ -45,10 +46,6 @@ const Experience = () => {
 		},
 	];
 
-	experience.map((item) => {
-		console.log(item.company);
-	});
-
 	const openNewTab = (url: string): void => {
 		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
 		if (newWindow) newWindow.opener = null;
@@ -63,8 +60,26 @@ const Experience = () => {
 				Exper<span className="text-red-500">ience</span>
 			</p>
 			<div className="w-[80%] mx-auto items-center mt-[4rem">
+				{experience.map((item) => {
+					return (
+						<div
+							className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem]"
+							onClick={item.link ? () => openNewTab(item.link) : undefined}
+							key="item.company"
+						>
+							<div className="flex space-x-4">
+								<Image
+									src="/images/123Loadboard.png"
+									alt="companyAvatar"
+									className="w-[4rem] h-[4em] mx-auto"
+								/>
+							</div>
+						</div>
+					);
+				})}
+
 				{/* Glass Section */}
-				<div
+				{/* <div
 					className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem]"
 					onClick={() => openNewTab("https://www.123loadboard.com")}
 				>
@@ -108,9 +123,9 @@ const Experience = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				{/* Glass 02 */}
-				<div className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem]">
+				{/* <div className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto hover:scale-110 cursor-pointer mt-[2rem]">
 					<div className="flex space-x-4">
 						<Image
 							src="/images/ProsperousFarmAvatar.jpeg"
@@ -142,7 +157,7 @@ const Experience = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
