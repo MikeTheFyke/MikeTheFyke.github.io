@@ -76,13 +76,13 @@ const Experience = () => {
 								<div className="flex-1 space-y-6 py-1">
 									<div>
 										<h1 className="text-[20px] md:text-[30px] mt-[.25rem]  text-slate-700 font-bold">
-											`${item.company}`
+											${item.company}
 										</h1>
 										<h1 className="text-[20px] md:text-[18px] text-slate-700 font-semibold">
-											`${item.jobTitle}`
+											{item.jobTitle}
 										</h1>
 										<h1 className="text-[20px] md:text-[18px] text-slate-700">
-											`${item.length}`
+											{item.length}
 										</h1>
 									</div>
 									<div className="space-y-3">
@@ -90,7 +90,7 @@ const Experience = () => {
 											<div className="">
 												<ul className="body-texts mt-[1.5rem] text-[#ABABAB] list-disc">
 													{item.tasks.map((task) => {
-														return <li key="task">${task}</li>;
+														return <li key="task">{task}</li>;
 													})}
 												</ul>
 											</div>
