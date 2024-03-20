@@ -54,7 +54,7 @@ const Experience = () => {
 
 	return (
 		<div
-			className="pt-[4rem] md:pt-[8rem] pb-[5rem] md:pb-[8rem]"
+			className="pt-[4rem] md:pt-[8rem] pb-[5rem] md:pb-[8rem] grid-col-2 md:grid-col-1 gap-[2rem]"
 			style={{ backgroundColor: Color.BACKGROUND_WHITE }}
 			id="Experience"
 		>
@@ -65,7 +65,7 @@ const Experience = () => {
 				{experience.map((item) => {
 					return (
 						<div
-							className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto cursor-pointer mt-[2rem]"
+							className="border border-blue-300 shadow rounded-md p-4 w-full mx-auto cursor-pointer mt-[2rem] h-[875px]"
 							style={{ backgroundColor: Color.BACKGROUND_BLUE }}
 							onClick={item.link ? () => openNewTab(item.link) : undefined}
 							key="item.company"
