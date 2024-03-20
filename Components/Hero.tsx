@@ -8,7 +8,9 @@ const Hero = () => {
 	const avatarCardImage1 = useRef(null);
 	const avatarImage1 = `url('/images/MikeFyke-Gen01.jpeg')`;
 	const avatarImage2 = `url('/images/mikeFykeAvatar.jpeg')`;
-	const [currentAvatar, setCurrentAvatar] = useState(avatarImage1);
+	const [currentAvatar, setCurrentAvatar] = useState(
+		`url('/images/MikeFyke-Gen01.jpeg')`
+	);
 
 	const flipAvatarCard = () => {
 		const tl = gsap.timeline();
