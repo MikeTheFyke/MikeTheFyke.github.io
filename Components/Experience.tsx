@@ -54,18 +54,18 @@ const Experience = () => {
 
 	return (
 		<div
-			className="pt-[4rem] md:pt-[8rem] pb-[5rem] md:pb-[8rem] grid-col-2 md:grid-col-1 gap-[2rem]"
+			className="pt-[4rem] md:pt-[8rem] pb-[5rem] md:pb-[8rem]"
 			style={{ backgroundColor: Color.BACKGROUND_WHITE }}
 			id="Experience"
 		>
 			<p className="heading drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 				Exper<span style={{ color: Color.MAIN_RED }}>ience</span>
 			</p>
-			<div className="w-[80%] mx-auto items-center mt-[4rem">
+			<div className="w-[80%] mx-auto items-center mt-[4rem grid-col-2 md:grid-col-1 gap-[2rem]">
 				{experience.map((item) => {
 					return (
 						<div
-							className="border border-blue-300 shadow rounded-md p-4 mx-auto cursor-pointer mt-[2rem] h-[400px] w-[50%]"
+							className="border border-blue-300 shadow rounded-md p-4 mx-auto cursor-pointer mt-[2rem] h-[600px] w-[50%]"
 							style={{ backgroundColor: Color.BACKGROUND_BLUE }}
 							onClick={item.link ? () => openNewTab(item.link) : undefined}
 							key="item.company"
@@ -97,7 +97,7 @@ const Experience = () => {
 											{item.length}
 										</h1>
 									</div>
-									<div className="space-y-3">
+									<div className="space-y-1">
 										<div className="grid grid-cols-2 gap-4">
 											<div className="">
 												<ul
