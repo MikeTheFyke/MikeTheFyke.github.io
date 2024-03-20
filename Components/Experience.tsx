@@ -88,7 +88,7 @@ const Experience = () => {
 									<div className="space-y-3">
 										<div className="grid grid-cols-2 gap-4">
 											<div className="">
-												<ul className="body-texts mt-[1.5rem] text-[#ABABAB] list-disc">
+												<ul className="body-texts mt-[1.5rem] text-[#EFEFEF] list-disc">
 													{item.tasks.map((task) => {
 														return <li key="task">{task}</li>;
 													})}

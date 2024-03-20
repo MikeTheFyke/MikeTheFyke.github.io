@@ -3,6 +3,7 @@ import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import { gsap } from "gsap";
+const dictionary = require("./Color.js");
 
 const Hero = () => {
 	const avatarCard = useRef(null);
@@ -48,8 +49,12 @@ const Hero = () => {
 				<div>
 					<h1 className="hero-heading">Hey Hey!</h1>
 					<span
-						className="hero-heading text-red-500"
-						style={{ whiteSpace: "nowrap", overflow: "hidden" }}
+						className="hero-heading"
+						style={{
+							whiteSpace: "nowrap",
+							overflow: "hidden",
+							color: dictionary.Color.MAIN_RED,
+						}}
 					>
 						It's me Mike!
 					</span>
