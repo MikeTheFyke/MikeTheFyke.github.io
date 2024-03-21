@@ -67,8 +67,12 @@ const Contact = () => {
 				</div>
 			</div>
 			<p>
-				<a href="https://clustrmaps.com/site/1byyc" title="Visit tracker">
-					...
+				<a
+					href="https://clustrmaps.com/site/1byyc"
+					title="Visit tracker"
+					style={{ cursor: "default", marginLeft: "10px" }}
+				>
+					Copyright Mike Fyke 2024
 				</a>
 			</p>
 		</div>
