@@ -65,7 +65,7 @@ const Experience = () => {
 				{experience.map((item) => {
 					return (
 						<div
-							className="shadow rounded-md p-4 mx-auto cursor-pointer mt-[2rem] max-h-[500px] whitespace-nowrap mr-[10px]"
+							className="shadow rounded-md p-4 mx-auto cursor-pointer mt-[2rem] max-h-[500px]"
 							style={{ backgroundColor: Color.BACKGROUND_BLUE }}
 							onClick={item.link ? () => openNewTab(item.link) : undefined}
 							key="item.company"
@@ -76,37 +76,36 @@ const Experience = () => {
 									alt="companyAvatar"
 									className="w-[4rem] h-[4em] mx-auto"
 								/>
-								<div className="flex-1 space-y-6 py-1">
-									<div>
-										<h1
-											className="text-[20px] md:text-[30px] mt-[.25rem] font-bold"
-											style={{ color: Color.BACKGROUND_WHITE }}
-										>
-											{item.company}
-										</h1>
-										<h1
-											className="text-[20px] md:text-[18px] font-semibold"
-											style={{ color: Color.BACKGROUND_WHITE }}
-										>
-											{item.jobTitle}
-										</h1>
-										<h1
-											className="text-[20px] md:text-[18px] whitespace-nowrap"
-											style={{ color: Color.BACKGROUND_WHITE }}
-										>
-											{item.length}
-										</h1>
-									</div>
-									<div className="space-y-1">
-										<ul
-											className="body-texts mt-[1.5rem] list-disc"
-											style={{ color: Color.BACKGROUND_WHITE }}
-										>
-											{item.tasks.map((task) => {
-												return <li key="task">{task}</li>;
-											})}
-										</ul>
-									</div>
+
+								<div>
+									<h1
+										className="text-[20px] md:text-[30px] mt-[.25rem] font-bold"
+										style={{ color: Color.BACKGROUND_WHITE }}
+									>
+										{item.company}
+									</h1>
+									<h1
+										className="text-[20px] md:text-[18px] font-semibold"
+										style={{ color: Color.BACKGROUND_WHITE }}
+									>
+										{item.jobTitle}
+									</h1>
+									<h1
+										className="text-[20px] md:text-[18px] whitespace-nowrap"
+										style={{ color: Color.BACKGROUND_WHITE }}
+									>
+										{item.length}
+									</h1>
+								</div>
+								<div className="space-y-1">
+									<ul
+										className="body-texts mt-[1.5rem] list-disc"
+										style={{ color: Color.BACKGROUND_WHITE }}
+									>
+										{item.tasks.map((task) => {
+											return <li key="task">{task}</li>;
+										})}
+									</ul>
 								</div>
 							</div>
 						</div>
