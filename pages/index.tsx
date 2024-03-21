@@ -44,7 +44,7 @@ const Homepage = () => {
 
 	return (
 		<div>
-			<div>
+			<div id="Hero">
 				<MobileNav nav={nav} closeNav={closeNav} />
 				<Nav openNav={openNav} />
 				<Hero />
