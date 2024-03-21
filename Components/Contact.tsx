@@ -70,7 +70,7 @@ const Contact = () => {
 				<a
 					onClick={() => openNewTab("https://clustrmaps.com/site/1byyc")}
 					title="Visit tracker"
-					style={{ cursor: "default", marginLeft: "10px" }}
+					style={{ cursor: "default", marginLeft: "20px" }}
 				>
 					Copyright Mike Fyke 2024
 				</a>
