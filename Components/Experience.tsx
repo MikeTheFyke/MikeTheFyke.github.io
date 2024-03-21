@@ -61,11 +61,11 @@ const Experience = () => {
 			<p className="heading drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 				Exper<span style={{ color: Color.MAIN_RED }}>ience</span>
 			</p>
-			<div className="mx-auto w-[80%] pt-[2rem] grid grid-cols-1 md:grid-cols-2 gap-[1rem] place-items-center">
+			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[1rem] place-items-center">
 				{experience.map((item) => {
 					return (
 						<div
-							className="shadow rounded-md p-4 mx-auto cursor-pointer mt-[2rem] max-h-[500px] whitespace-nowrap sm:min-w-[432px] md:min-w[400px]"
+							className="shadow rounded-md p-4 cursor-pointer mt-[2rem] max-h-[500px] whitespace-nowrap sm:min-w-[432px] md:mx-auto"
 							style={{ backgroundColor: Color.BACKGROUND_BLUE }}
 							onClick={item.link ? () => openNewTab(item.link) : undefined}
 							key="item.company"
