@@ -27,7 +27,7 @@ const Nav = ({ openNav }: Props) => {
 		gsap.to(navLinkExperience.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkContact.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navMain.current, { x: 0, duration: 1, display: "block" });
-		gsap.to(navHamburger.current, { y: 10, duration: 1, delay: 1.75 });
+		gsap.to(navHamburger.current, { y: 5, duration: 1, delay: 1.75 });
 		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 2.25 });
 		gsap.to(navLinkSkills.current, {
 			scaleX: `100%`,
