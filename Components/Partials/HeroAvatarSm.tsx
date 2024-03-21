@@ -9,7 +9,7 @@ const HeroAvatarSm = () => {
 				className="h-[250px] w-[250px] relative items-center rounded-full md:hidden lg:hidden"
 			>
 				<Image
-					src="/images/MikeFyke-Gen01.jpeg"
+					src="/images/MikeFyke-Gen.jpeg"
 					alt="user"
 					layout="fill"
 					className="object-cover rounded-full"
