@@ -70,7 +70,7 @@ const Experience = () => {
 							onClick={item.link ? () => openNewTab(item.link) : undefined}
 							key="item.company"
 						>
-							<div className="flex space-x-4">
+							<div className="">
 								<Image
 									src={item.icon}
 									alt="companyAvatar"
