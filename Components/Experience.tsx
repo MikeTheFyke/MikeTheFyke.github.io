@@ -65,7 +65,7 @@ const Experience = () => {
 				{experience.map((item) => {
 					return (
 						<div
-							className="shadow rounded-md p-4 mx-auto cursor-pointer mt-[2rem] max-h-[500px] whitespace-nowrap sm:min-w-[432px] md:min-w[400px]"
+							className="shadow rounded-md p-4 mx-auto cursor-pointer mt-[2rem] max-h-[500px] whitespace-nowrap"
 							style={{ backgroundColor: Color.BACKGROUND_BLUE }}
 							onClick={item.link ? () => openNewTab(item.link) : undefined}
 							key="item.company"
