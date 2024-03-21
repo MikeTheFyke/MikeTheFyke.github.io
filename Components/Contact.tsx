@@ -66,6 +66,11 @@ const Contact = () => {
 					/>
 				</div>
 			</div>
+			<p>
+				<a href="https://clustrmaps.com/site/1byyc" title="Visit tracker">
+					...
+				</a>
+			</p>
 		</div>
 	);
 };
