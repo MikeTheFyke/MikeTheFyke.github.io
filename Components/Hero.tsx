@@ -5,7 +5,7 @@ import HeroAvatarSm from "./Partials/HeroAvatarSm";
 
 const Hero = () => {
 	return (
-		<div style={{ marginBottom: "20px" }}>
+		<div style={{ marginBottom: "20px", marginTop: "20px" }}>
 			<div className="hero-main-container">
 				<HeroAvatarSm />
 				<HeroHeader />
