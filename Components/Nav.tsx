@@ -16,14 +16,18 @@ const Nav = ({ openNav }: Props) => {
 	const navLinkExperience = useRef(null);
 	const navLinkContact = useRef(null);
 
+	const navHamburger = useRef(null);
+
 	const headerSlide = () => {
 		gsap.to(navMain.current, { x: `-120vw`, duration: 0 });
 		gsap.to(navFyke.current, { y: -60, duration: 0 });
+		gsap.to(navHamburger.current, { y: -60, duration: 0 });
 		gsap.to(navLinkSkills.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkProjects.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkExperience.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navLinkContact.current, { scaleX: 0, scaleY: 0, duration: 0 });
 		gsap.to(navMain.current, { x: 0, duration: 1, display: "block" });
+		gsap.to(navHamburger.current, { y: 10, duration: 1, delay: 1.75 });
 		gsap.to(navFyke.current, { y: 10, duration: 1, delay: 2.25 });
 		gsap.to(navLinkSkills.current, {
 			scaleX: `100%`,
@@ -82,7 +86,7 @@ const Nav = ({ openNav }: Props) => {
 						CONTACT
 					</a>
 				</div>
-				<div onClick={openNav}>
+				<div onClick={openNav} ref={navHamburger}>
 					<Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-red-500" />
 				</div>
 			</div>
