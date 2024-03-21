@@ -97,7 +97,7 @@ const Experience = () => {
 										{item.length}
 									</h1>
 								</div>
-								<div className="space-y-1 pl-[10px]">
+								<div className="space-y-1 pl-[10px] mb-[8px]">
 									<ul
 										className="body-texts mt-[1.5rem] list-disc"
 										style={{ color: Color.BACKGROUND_WHITE }}
