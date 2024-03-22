@@ -56,14 +56,17 @@ const Contact = () => {
 
 				<div
 					className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+					onClick={() =>
+						openNewTab("https://www.linkedin.com/in/mike-fyke-5b4a5aa0/")
+					}
 					style={{
-						width: "3rem",
-						height: "3rem",
-						borderRadius: "1.5rem",
-						textAlign: "center",
+						backgroundImage: `url("/images/LinkedinAvatar.png")`,
+						backgroundRepeat: "no-repeat",
+						backgroundSize: "cover",
+						backgroundPosition: "center",
 					}}
 				>
-					<Image
+					{/* <Image
 						onClick={() =>
 							openNewTab("https://www.linkedin.com/in/mike-fyke-5b4a5aa0/")
 						}
@@ -73,7 +76,7 @@ const Contact = () => {
 						fill
 						className="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
 						style={{ width: "3rem", height: "3rem", borderRadius: "1.5rem" }}
-					/>
+					/> */}
 				</div>
 			</div>
 			<p style={{ marginTop: "1rem" }}>
