@@ -54,7 +54,15 @@ const Contact = () => {
 					/>
 				</div>
 
-				<div className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+				<div
+					className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+					style={{
+						width: "3rem",
+						height: "3rem",
+						borderRadius: "1.5rem",
+						textAlign: "center",
+					}}
+				>
 					<Image
 						onClick={() =>
 							openNewTab("https://www.linkedin.com/in/mike-fyke-5b4a5aa0/")
