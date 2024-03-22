@@ -50,6 +50,7 @@ const Contact = () => {
 						objectFit="contain"
 						fill
 						className="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+						style={{ width: "3rem", height: "3rem", borderRadius: "1.5rem" }}
 					/>
 				</div>
 
@@ -63,6 +64,7 @@ const Contact = () => {
 						objectFit="contain"
 						fill
 						className="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+						style={{ width: "3rem", height: "3rem", borderRadius: "1.5rem" }}
 					/>
 				</div>
 			</div>
