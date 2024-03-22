@@ -42,14 +42,14 @@ const Contact = () => {
 					</a>
 				</div>
 
-				{/* <div className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+				<div className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 					<Image
 						onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
 						src={"/images/GithubAvatar.png"}
 						alt={"github"}
 						objectFit="contain"
 						fill
-						className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+						className="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
 					/>
 				</div>
 
@@ -62,9 +62,9 @@ const Contact = () => {
 						alt={"linkedin"}
 						objectFit="contain"
 						fill
-						className="mx-auto mb-[2rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+						className="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
 					/>
-				</div> */}
+				</div>
 			</div>
 			<p style={{ marginTop: "1rem" }}>
 				<a
