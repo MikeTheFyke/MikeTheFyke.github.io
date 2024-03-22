@@ -42,17 +42,16 @@ const Contact = () => {
 					</a>
 				</div>
 
-				<div className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-					<Image
-						onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
-						src={"/images/GithubAvatar.png"}
-						alt={"github"}
-						objectFit="contain"
-						fill
-						className="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-						style={{ width: "3rem", height: "3rem", borderRadius: "1.5rem" }}
-					/>
-				</div>
+				<div
+					className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+					onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
+					style={{
+						backgroundImage: `url("/images/GithubAvatar.png")`,
+						backgroundRepeat: "no-repeat",
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+					}}
+				/>
 
 				<div
 					className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
@@ -65,19 +64,7 @@ const Contact = () => {
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 					}}
-				>
-					{/* <Image
-						onClick={() =>
-							openNewTab("https://www.linkedin.com/in/mike-fyke-5b4a5aa0/")
-						}
-						src={"/images/LinkedinAvatar.png"}
-						alt={"linkedin"}
-						objectFit="contain"
-						fill
-						className="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF] cursor-pointer drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-						style={{ width: "3rem", height: "3rem", borderRadius: "1.5rem" }}
-					/> */}
-				</div>
+				/>
 			</div>
 			<p style={{ marginTop: "1rem" }}>
 				<a
