@@ -15,7 +15,7 @@ const Contact = () => {
 
 	return (
 		<div
-			className="pt-[4rem] pb-[4rem]"
+			className="pt-[4rem] pb-[2rem]"
 			id="Contact"
 			style={{ backgroundColor: Color.TEXT_GRAY }}
 		>
@@ -66,11 +66,15 @@ const Contact = () => {
 					/>
 				</div>
 			</div>
-			<p>
+			<p style={{ marginTop: "1rem" }}>
 				<a
 					onClick={() => openNewTab("https://clustrmaps.com/site/1byyc")}
 					title="Visit tracker"
-					style={{ cursor: "default", marginLeft: "20px" }}
+					style={{
+						cursor: "default",
+						marginLeft: "20px",
+						color: Color.BACKGROUND_WHITE,
+					}}
 				>
 					Copyright Mike Fyke 2024
 				</a>
