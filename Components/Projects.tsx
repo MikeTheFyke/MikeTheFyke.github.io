@@ -12,7 +12,7 @@ const Projects = () => {
 			</h1>
 
 			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[2rem]">
-				<div style={{ backgroundColor: "red" }}>
+				<div style={{ backgroundColor: "red" }} className="rounded">
 					<h1 className="project-title">Test Project</h1>
 					<div
 						className="project-image-container"
