@@ -12,6 +12,26 @@ const Projects = () => {
 			</h1>
 
 			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[2rem]">
+				<div style={{ backgroundColor: "red" }}>
+					<h1 className="project-title">Test Prpject</h1>
+					<div
+						className="project-image-container"
+						style={{
+							backgroundImage: `url("/images/BetterBytes-Main.jpeg")`,
+							backgroundRepeat: "no-repeat",
+							backgroundSize: "cover",
+							backgroundPosition: "center",
+						}}
+					/>
+					<h1 className="project-description">
+						This test project is a test project to test this project layout.
+					</h1>
+					<h1 className="project-description">
+						Test Project Tech Stack : NodeJs, ReactJs, Express, React-Router,
+						Rellax, PostgresSQL, Knex, Cheerio, Bootstrap
+					</h1>
+				</div>
+
 				<div>
 					<h1 className="project-title">Better Bytes</h1>
 					<div className="project-image-container">
