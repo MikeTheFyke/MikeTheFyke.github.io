@@ -28,3 +28,44 @@ export const experience = [
 		],
 	},
 ];
+
+export const projects = [
+	{
+		name: "Better Bytes",
+		image: "/images/BetterBytes-Main.jpeg",
+		summary:
+			"Search Grocery items from multiple stores to compare and to save the most time and money! Build recipes to also and compare total proce from multiple stores.",
+		stack:
+			"NodeJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex, Cheerio, Bootstrap",
+	},
+	{
+		name: "Owl Site",
+		image: "/images/OwlSite-Main.jpeg",
+		summary: "Summary",
+		stack: "Vue, GSAP, Express, MongoDB",
+	},
+	{
+		name: "Xpedia",
+		image: "/images/Xpedia-Main.jpeg",
+		summary: "Summary",
+		stack: "NodeJs, VueJs, GSAP",
+	},
+	{
+		name: "Shrink-A-Link",
+		image: "/images/ShrinkALink-Main.jpeg",
+		summary: "Summary",
+		stack: "NodeJs, Express, EJS, JQuery, Bootstrap",
+	},
+	{
+		name: "Chatter Box",
+		image: "/images/ChatterBox-Main.jpeg",
+		summary: "Summary",
+		stack: "NodeJs, React, React-dom, Express, Webpack",
+	},
+	{
+		name: "Tweeter",
+		image: "/images/Tweeter-Main.jpeg",
+		summary: "Summary",
+		stack: "HTML, CSS, JQuery, Express, MongoDB",
+	},
+];

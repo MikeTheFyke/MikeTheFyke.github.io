@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Color } from "@/Color";
+import { projects } from "@/public/data/data";
 
 const Projects = () => {
 	return (
@@ -13,128 +14,47 @@ const Projects = () => {
 			</h1>
 
 			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[2rem]">
-				<div
-					style={{ backgroundColor: Color.BACKGROUND_WHITE }}
-					className="rounded"
-				>
-					<h1
-						className="project-title"
-						style={{ color: Color.BACKGROUND_BLUE }}
-					>
-						Better Bytes
-					</h1>
-					<div className="flex justify-center items-center">
+				{projects.map((project) => {
+					return (
 						<div
-							className="project-image-container"
-							style={{
-								backgroundImage: `url("/images/BetterBytes-Main.jpeg")`,
-								backgroundRepeat: "no-repeat",
-								backgroundSize: "cover",
-								backgroundPosition: "center",
-								width: "240px",
-								height: "240px",
-							}}
-						/>
-					</div>
-					<h1 style={{ color: Color.BACKGROUND_BLUE, margin: "8px" }}>
-						Search Grocery items from multiple stores to compare and to save the
-						most time and money! Build recipes to also and compare total proce
-						from multiple stores.
-					</h1>
-					<h1
-						style={{
-							color: Color.TEXT_GRAY,
-							textAlign: "center",
-							margin: "8px",
-						}}
-					>
-						NodeJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex,
-						Cheerio, Bootstrap
-					</h1>
-				</div>
-
-				<div>
-					<h1 className="project-title">Better Bytes</h1>
-					<div className="project-image-container">
-						<Image
-							src="/images/BetterBytes-Main.jpeg"
-							alt="portfolio"
-							layout="fill"
-							className="object-contain"
-						/>
-					</div>
-					<h1 className="project-description">
-						NodeJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex,
-						Cheerio, Bootstrap
-					</h1>
-				</div>
-
-				<div>
-					<h1 className="project-title">Owl Site</h1>
-					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-						<Image
-							src="/images/OwlSite-Main.jpeg"
-							alt="portfolio"
-							layout="fill"
-							className="object-contain"
-						/>
-					</div>
-					<h1 className="project-description">Vue, GSAP, Express, MongoDB</h1>
-				</div>
-				<div>
-					<h1 className="project-title">Shrink-A-Link</h1>
-					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-						<Image
-							src="/images/ShrinkALink-Main.jpeg"
-							alt="portfolio"
-							layout="fill"
-							className="object-contain"
-						/>
-					</div>
-					<h1 className="project-description">
-						NodeJs, Express, EJS, JQuery, Bootstrap
-					</h1>
-				</div>
-				<div>
-					<h1 className="project-title">Xpedia</h1>
-					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-						<Image
-							src="/images/Xpedia-Main.jpeg"
-							alt="portfolio"
-							layout="fill"
-							className="object-contain"
-						/>
-					</div>
-					<h1 className="project-description">NodeJs, VueJs, GSAP</h1>
-				</div>
-				<div>
-					<h1 className="project-title">Chatter Box</h1>
-					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-						<Image
-							src="/images/ChatterBox-Main.jpeg"
-							alt="portfolio"
-							layout="fill"
-							className="object-contain"
-						/>
-					</div>
-					<h1 className="project-description">
-						NodeJs, React, React-dom, Express, Webpack
-					</h1>
-				</div>
-				<div>
-					<h1 className="project-title">Tweeter</h1>
-					<div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-						<Image
-							src="/images/Tweeter-Main.jpeg"
-							alt="portfolio"
-							layout="fill"
-							className="object-contain"
-						/>
-					</div>
-					<h1 className="project-description">
-						HTML, CSS, JQuery, Express, MongoDB
-					</h1>
-				</div>
+							style={{ backgroundColor: Color.BACKGROUND_WHITE }}
+							className="rounded"
+							key={project.name}
+						>
+							<h1
+								className="project-title"
+								style={{ color: Color.BACKGROUND_BLUE }}
+							>
+								{project.name}
+							</h1>
+							<div className="flex justify-center items-center">
+								<div
+									className="project-image-container"
+									style={{
+										backgroundImage: `url(${project.image})`,
+										backgroundRepeat: "no-repeat",
+										backgroundSize: "cover",
+										backgroundPosition: "center",
+										width: "240px",
+										height: "240px",
+									}}
+								/>
+							</div>
+							<h1 style={{ color: Color.BACKGROUND_BLUE, margin: "8px" }}>
+								{project.summary}
+							</h1>
+							<h1
+								style={{
+									color: Color.TEXT_GRAY,
+									textAlign: "center",
+									margin: "8px",
+								}}
+							>
+								{project.stack}
+							</h1>
+						</div>
+					);
+				})}
 			</div>
 		</div>
 	);
