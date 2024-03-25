@@ -37,15 +37,17 @@ const Projects = () => {
 						/>
 					</div>
 					<h1 style={{ color: Color.BACKGROUND_BLUE }}>
-						Have you ever gone specifically to a store to buy a product because
-						it was on sale? But were you actually saving money? Better Bytes was
-						created to fetch grocery prices from multiple stores. A user could
-						build a grocery list showing a total price comparison of stores you
-						a user could actually save the most money. A secondary feature was
-						to add a recipe section which would also show how much a recipe cost
-						comparing available stores.
+						Search Grocery items from multiple stores to compare and to save the
+						most time and money! Build recipes to also and compare total proce
+						from multiple stores.
 					</h1>
-					<h1 style={{ color: Color.TEXT_GRAY, textAlign: "center" }}>
+					<h1
+						style={{
+							color: Color.TEXT_GRAY,
+							textAlign: "center",
+							marginBottom: "8px",
+						}}
+					>
 						NodeJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex,
 						Cheerio, Bootstrap
 					</h1>
