@@ -36,7 +36,7 @@ const Projects = () => {
 							}}
 						/>
 					</div>
-					<h1 style={{ color: Color.BACKGROUND_BLUE }}>
+					<h1 style={{ color: Color.BACKGROUND_BLUE, margin: "8px" }}>
 						Search Grocery items from multiple stores to compare and to save the
 						most time and money! Build recipes to also and compare total proce
 						from multiple stores.
@@ -45,7 +45,7 @@ const Projects = () => {
 						style={{
 							color: Color.TEXT_GRAY,
 							textAlign: "center",
-							marginBottom: "8px",
+							margin: "8px",
 						}}
 					>
 						NodeJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex,
