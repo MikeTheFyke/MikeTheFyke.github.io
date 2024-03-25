@@ -21,23 +21,33 @@ const Projects = () => {
 						className="project-title"
 						style={{ color: Color.BACKGROUND_BLUE }}
 					>
-						Test Project
+						Better Bytes
 					</h1>
-					<div
-						className="project-image-container"
-						style={{
-							backgroundImage: `url("/images/BetterBytes-Main.jpeg")`,
-							backgroundRepeat: "no-repeat",
-							backgroundSize: "cover",
-							backgroundPosition: "center",
-						}}
-					/>
+					<div className="flex justify-center items-center">
+						<div
+							className="project-image-container"
+							style={{
+								backgroundImage: `url("/images/BetterBytes-Main.jpeg")`,
+								backgroundRepeat: "no-repeat",
+								backgroundSize: "cover",
+								backgroundPosition: "center",
+								width: "240px",
+								height: "240px",
+							}}
+						/>
+					</div>
 					<h1 style={{ color: Color.BACKGROUND_BLUE }}>
-						This test project is a test project to test this project layout.
+						Have you ever gone specifically to a store to buy a product because
+						it was on sale? But were you actually saving money? Better Bytes was
+						created to fetch grocery prices from multiple stores. A user could
+						build a grocery list showing a total price comparison of stores you
+						a user could actually save the most money. A secondary feature was
+						to add a recipe section which would also show how much a recipe cost
+						comparing available stores.
 					</h1>
-					<h1 style={{ color: Color.TEXT_GRAY }}>
-						Test Project Tech Stack : NodeJs, ReactJs, Express, React-Router,
-						Rellax, PostgresSQL, Knex, Cheerio, Bootstrap
+					<h1 style={{ color: Color.TEXT_GRAY, textAlign: "center" }}>
+						NodeJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex,
+						Cheerio, Bootstrap
 					</h1>
 				</div>
 
