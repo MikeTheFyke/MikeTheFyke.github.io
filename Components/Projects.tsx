@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Color } from "@/Color";
 
 const Projects = () => {
 	return (
@@ -12,8 +13,16 @@ const Projects = () => {
 			</h1>
 
 			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[2rem]">
-				<div style={{ backgroundColor: "red" }} className="rounded">
-					<h1 className="project-title">Test Project</h1>
+				<div
+					style={{ backgroundColor: Color.BACKGROUND_WHITE }}
+					className="rounded"
+				>
+					<h1
+						className="project-title"
+						style={{ color: Color.BACKGROUND_BLUE }}
+					>
+						Test Project
+					</h1>
 					<div
 						className="project-image-container"
 						style={{
@@ -23,10 +32,10 @@ const Projects = () => {
 							backgroundPosition: "center",
 						}}
 					/>
-					<h1>
+					<h1 style={{ color: Color.BACKGROUND_BLUE }}>
 						This test project is a test project to test this project layout.
 					</h1>
-					<h1>
+					<h1 style={{ color: Color.TEXT_GRAY }}>
 						Test Project Tech Stack : NodeJs, ReactJs, Express, React-Router,
 						Rellax, PostgresSQL, Knex, Cheerio, Bootstrap
 					</h1>
