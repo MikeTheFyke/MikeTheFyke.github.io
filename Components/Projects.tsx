@@ -13,7 +13,7 @@ const Projects = () => {
 
 			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[2rem]">
 				<div style={{ backgroundColor: "red" }}>
-					<h1 className="project-title">Test Prpject</h1>
+					<h1 className="project-title">Test Project</h1>
 					<div
 						className="project-image-container"
 						style={{
@@ -23,10 +23,10 @@ const Projects = () => {
 							backgroundPosition: "center",
 						}}
 					/>
-					<h1 className="project-description">
+					<h1>
 						This test project is a test project to test this project layout.
 					</h1>
-					<h1 className="project-description">
+					<h1>
 						Test Project Tech Stack : NodeJs, ReactJs, Express, React-Router,
 						Rellax, PostgresSQL, Knex, Cheerio, Bootstrap
 					</h1>
