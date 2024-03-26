@@ -11,7 +11,7 @@ const Experience = () => {
 
 	return (
 		<div
-			className="py-[4rem] md:pt-[8rem] md:pb-[8rem]"
+			className="py-[4rem] md:py-[8rem]"
 			style={{ backgroundColor: Color.BACKGROUND_WHITE }}
 			id="Experience"
 		>

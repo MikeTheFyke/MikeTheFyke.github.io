@@ -5,10 +5,7 @@ import { projects } from "@/public/data/data";
 
 const Projects = () => {
 	return (
-		<div
-			className="bg-[#2B445E] pt-[4rem] md:pt-[8rem] pb-[1rem]"
-			id="Projects"
-		>
+		<div className="bg-[#2B445E] py-[4rem] md:py-[8rem]" id="Projects">
 			<h1 className="heading drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 				Pro<span className="text-red-500">jects</span>
 			</h1>
