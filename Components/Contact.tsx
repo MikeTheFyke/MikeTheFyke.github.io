@@ -4,7 +4,6 @@ import {
 	MapIcon,
 } from "@heroicons/react/20/solid";
 import React from "react";
-import Image from "next/image";
 import { Color } from "@/Color";
 
 const Contact = () => {

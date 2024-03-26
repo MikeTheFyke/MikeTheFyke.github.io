@@ -1,5 +1,4 @@
-import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 
