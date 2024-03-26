@@ -1,6 +1,7 @@
 import React from "react";
 import SkillsLanguage from "./SkillsLanguage";
 import SkillsItem from "./SkillsItem";
+import { education } from "@/public/data/data";
 
 const Skills = () => {
 	return (
@@ -9,20 +10,17 @@ const Skills = () => {
 				EDUCATION & <span className="text-red-500">Skills</span>
 			</h1>
 			<div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
-				<div>
-					<SkillsItem
-						title="Lighthouse Labs"
-						year="2019"
-						description="Fullstack Web Development bootcamp."
-					/>
-				</div>
-				<div>
-					<SkillsItem
-						title="Sheridan College"
-						year="2007 - 2009"
-						description="Visual & creative Arts (Advanced Diploma)"
-					/>
-				</div>
+				{education.map((item) => {
+					return (
+						<div key="item.institution">
+							<SkillsItem
+								title={item.institution}
+								year={item.year}
+								description={item.description}
+							/>
+						</div>
+					);
+				})}
 			</div>
 			<div className="mx-auto  w-[80%]">
 				<SkillsLanguage
