@@ -12,7 +12,7 @@ const Skills = () => {
 			<div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
 				{education.map((item) => {
 					return (
-						<div key="item.institution">
+						<div key="item.institution" className="md:h-[170px]">
 							<SkillsItem
 								title={item.institution}
 								year={item.year}

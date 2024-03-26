@@ -9,7 +9,7 @@ interface Props {
 
 const SkillsItem = ({ title, year, description }: Props) => {
 	return (
-		<div className="mb-[2rem] md:mb-[2rem]">
+		<div className="mb-[2rem]">
 			<span
 				className="px-[2rem] py-[0.9rem] font-bold text-[18px] border-[2px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
 				style={{
