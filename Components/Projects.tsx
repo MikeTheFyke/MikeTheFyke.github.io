@@ -4,6 +4,11 @@ import { Color } from "@/Color";
 import { projects } from "@/public/data/data";
 
 const Projects = () => {
+	const openNewTab = (url: string): void => {
+		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+		if (newWindow) newWindow.opener = null;
+	};
+
 	return (
 		<div className="bg-[#2B445E] py-[4rem] md:py-[8rem]" id="Projects">
 			<h1 className="heading drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
@@ -17,6 +22,7 @@ const Projects = () => {
 							style={{ backgroundColor: Color.BACKGROUND_WHITE }}
 							className="rounded"
 							key={project.name}
+							onClick={() => openNewTab(project.link)}
 						>
 							<h1
 								className="project-title"
