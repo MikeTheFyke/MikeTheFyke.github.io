@@ -1,7 +1,7 @@
 import React from "react";
 import SkillsLanguage from "./SkillsLanguage";
 import SkillsItem from "./SkillsItem";
-import { education } from "@/public/data/data";
+import { education, skills } from "@/public/data/data";
 
 const Skills = () => {
 	return (
@@ -23,26 +23,15 @@ const Skills = () => {
 				})}
 			</div>
 			<div className="mx-auto  w-[80%]">
-				<SkillsLanguage
-					skills="NodeJs, Javascript, Typescript, CSS, Sass, Ruby, Python, Xcode, AndroidStudio"
-					title="Environments & Languages"
-				/>
-				<SkillsLanguage
-					skills="React, ReactNative, JQuery, GSAP, Materialui, StyledComponents, Axios, Cheerio, Lodash, WebGL, EJS"
-					title="Libraries"
-				/>
-				<SkillsLanguage
-					skills="NextJs, VueJs, Websockets, ActiveRecord, Rails, Express, Bootstrap, Tailwind"
-					title="Protocols & Frameworks"
-				/>
-				<SkillsLanguage
-					skills="MongoDB, SQL, PostgresSQL, Postgres, Git, Knex"
-					title="Databases"
-				/>
-				<SkillsLanguage
-					skills="AdobeCS, HTML5Canvas, AutoCad, Blender, ThreeJs, Drawing, Painting, Typography, Web Design, Graphic Design, Photography"
-					title="Other Skills"
-				/>
+				{skills.map((skill) => {
+					return (
+						<SkillsLanguage
+							key={skill.title}
+							skills={skill.skills}
+							title={skill.title}
+						/>
+					);
+				})}
 			</div>
 		</div>
 	);

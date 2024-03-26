@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Props {
-	skills: string;
+	skills: string[];
 	title: string;
 }
 
@@ -13,7 +13,7 @@ const SkillsLanguage = ({ skills, title }: Props) => {
 					{title}
 				</h1>
 				<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-slate-300 text-[20px]">
-					{skills}
+					{skills.toString()}
 				</h1>
 			</div>
 		</div>
