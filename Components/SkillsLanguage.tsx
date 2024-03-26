@@ -1,3 +1,4 @@
+import { Color } from "@/Color";
 import React from "react";
 
 interface Props {
@@ -8,11 +9,20 @@ interface Props {
 const SkillsLanguage = ({ skills, title }: Props) => {
 	return (
 		<div>
-			<div className="mb-[1rem]">
-				<h1 className="p-5 pb-0 w-[100%] bg-gray-800 rounded-sm text-white text-[20px] font-bold uppercase">
+			<div
+				className="mb-[1rem] rounded"
+				style={{ backgroundColor: Color.BACKGROUND_BLUE }}
+			>
+				<h1
+					className="p-5 pb-0 w-[100%] text-[20px] font-bold uppercase"
+					style={{ color: Color.BACKGROUND_WHITE }}
+				>
 					{title}
 				</h1>
-				<h1 className="p-5 w-[100%] bg-gray-800 rounded-sm text-slate-300 text-[20px]">
+				<h1
+					className="p-5 w-[100%] text-[20px]"
+					style={{ color: Color.TEXT_GRAY }}
+				>
 					{skills.toString()}
 				</h1>
 			</div>

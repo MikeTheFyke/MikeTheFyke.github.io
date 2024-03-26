@@ -51,7 +51,7 @@ const Projects = () => {
 							</h1>
 							<h1
 								style={{
-									color: Color.TEXT_GRAY,
+									color: Color.BACKGROUND_WHITE,
 									textAlign: "center",
 									margin: "8px",
 								}}
