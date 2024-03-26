@@ -43,7 +43,10 @@ const Projects = () => {
 									}}
 								/>
 							</div>
-							<h1 style={{ color: Color.BACKGROUND_BLUE, margin: "8px" }}>
+							<h1
+								style={{ color: Color.BACKGROUND_BLUE, margin: "8px" }}
+								className="px-2"
+							>
 								{project.summary}
 							</h1>
 							<h1
