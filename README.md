@@ -43,4 +43,3 @@ This project is made with the following packages:
 tsparticles https://particles.js.org/ https://github.com/tsparticles/react
 react-type-animation https://www.npmjs.com/package/react-type-animation
 react-multi-carousel https://www.npmjs.com/package/react-multi-carousel
-Animate On Scroll Library https://michalsnik.github.io/aos/ https://github.com/michalsnik/aos

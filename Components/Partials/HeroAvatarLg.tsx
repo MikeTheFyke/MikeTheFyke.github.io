@@ -31,7 +31,6 @@ const HeroAvatarLg = () => {
 			ref={avatarCard}
 		>
 			<div
-				data-aos="zoom-in"
 				className="hidden relative md:flex lg:flex items-center rounded-full md:h-[375px] md:w-[150px] lg:h-[450px] lg:w-[450px]"
 				id={"card01"}
 				style={{

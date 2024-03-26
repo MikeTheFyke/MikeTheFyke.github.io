@@ -31,7 +31,6 @@ const HeroAvatarSm = () => {
 			ref={avatarCard}
 		>
 			<div
-				data-aos="zoom-in"
 				className="h-[250px] w-[250px] relative items-center rounded-full md:hidden lg:hidden"
 				id={"card01"}
 				style={{
