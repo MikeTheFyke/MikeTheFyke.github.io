@@ -73,3 +73,82 @@ export const projects = [
 		stack: "HTML, CSS, JQuery, Express, MongoDB",
 	},
 ];
+
+export const education = [
+	{
+		institution: "Lighthouse Labs",
+		description: "Fullstack Web Development Bootcamp",
+		year: "2019",
+	},
+	{
+		institution: "Sheridan College",
+		description: "Visual & Creative Arts (Advanced Diploma)",
+		year: "2007 - 2009",
+	},
+];
+
+export const skills = [
+	{
+		skills: [
+			"NodeJs",
+			"Javascript",
+			"Typescript",
+			"CSS",
+			"Sass",
+			"Ruby",
+			"Python",
+			"Xcode",
+			"AndroidStudio",
+		],
+		title: "Environments & Languages",
+	},
+	{
+		skills: [
+			"React",
+			"ReactNative",
+			"JQuery",
+			"GSAP",
+			"Materialui",
+			"StyledComponents",
+			"Axios",
+			"Cheerio",
+			"Lodash",
+			"WebGL",
+			"EJS",
+		],
+		title: "Libraries",
+	},
+	{
+		skills: [
+			"NextJs",
+			"VueJs",
+			"Websockets",
+			"ActiveRecord",
+			"Rails",
+			"Express",
+			"Bootstrap",
+			"Tailwind",
+		],
+		title: "Protocols & Frameworks",
+	},
+	{
+		skills: ["MongoDB", "SQL", "PostgresSQL", "Postgres", "Git", "Knex"],
+		title: "Databases",
+	},
+	{
+		skills: [
+			"AdobeCS",
+			"HTML5Canvas",
+			"AutoCad",
+			"Blender",
+			"ThreeJs",
+			"Drawing",
+			"Painting",
+			"Typography",
+			"Web Design",
+			"Graphic Design",
+			"Photography",
+		],
+		title: "Other Skills",
+	},
+];
