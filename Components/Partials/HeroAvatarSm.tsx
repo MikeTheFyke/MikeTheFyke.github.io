@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
+import { gsap } from "gsap";
 
 const HeroAvatarSm = () => {
 	const avatarCard = useRef(null);
@@ -26,7 +27,7 @@ const HeroAvatarSm = () => {
 
 	return (
 		<div
-			className="sm:w-[100%] sm:mt-[rem] md:hidden lg:hidden flex justify-center items-center"
+			className="sm:w-[100%] sm:mt-[rem] md:hidden lg:hidden flex justify-center items-center cursor-pointer"
 			onClick={() => flipAvatarCard()}
 			ref={avatarCard}
 		>
