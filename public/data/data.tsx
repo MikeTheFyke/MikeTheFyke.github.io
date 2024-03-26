@@ -35,7 +35,7 @@ export const projects = [
 		image: "/images/BetterBytes-Main.jpeg",
 		link: "https://github.com/MikeTheFyke/Better-Bytes",
 		summary:
-			"Search Grocery items from multiple stores to compare and to save the most time and money! Build recipes to also and compare total proce from multiple stores.",
+			"Search grocery items from multiple stores to compare and to save the most time and money! Build recipes to compare total price from multiple stores.",
 		stack:
 			"NodeJs, ReactJs, Express, React-Router, Rellax, PostgresSQL, Knex, Cheerio, Bootstrap",
 	},
@@ -60,7 +60,7 @@ export const projects = [
 		image: "/images/ShrinkALink-Main.jpeg",
 		link: "https://github.com/MikeTheFyke/Shrink-A-Link",
 		summary:
-			"Shrinking urls much like TinURL. Login or register to start shrinking your links. Bored of shrinking links? A user can also upload an avatar to personalize their profile.",
+			"Shrinking urls much like TinyURL. Login or register to start shrinking your links. Bored of shrinking links? A user can also upload an avatar to personalize their profile.",
 		stack: "NodeJs, Express, EJS, JQuery, Bootstrap",
 	},
 	{
@@ -68,14 +68,14 @@ export const projects = [
 		image: "/images/ChatterBox-Main.jpeg",
 		link: "https://github.com/MikeTheFyke/Chatter-Box",
 		summary:
-			"A client-side SPA that allows multiple users to chat with eachother. users area able to set their username and chat in real-time through the Websocket server.",
+			"A client-side SPA that allows multiple users to chat with eachother. Users are able to set their username and chat in real-time through the Websocket server.",
 		stack: "NodeJs, React, React-dom, Express, Webpack",
 	},
 	{
 		name: "Tweeter",
 		image: "/images/Tweeter-Main.jpeg",
 		link: "https://github.com/MikeTheFyke/Tweeter",
-		summary: "A Twitter, I mean X, SPA clone.",
+		summary: "A Twitter ... I mean X, SPA clone.",
 		stack: "HTML, CSS, JQuery, Express, MongoDB",
 	},
 ];
