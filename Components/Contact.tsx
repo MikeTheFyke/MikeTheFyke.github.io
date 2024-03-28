@@ -71,7 +71,7 @@ const Contact = () => {
 					style={{
 						backgroundImage: `url("/images/BloggerAvatar.png")`,
 						backgroundRepeat: "no-repeat",
-						backgroundSize: "cover",
+						backgroundSize: "contain",
 						backgroundPosition: "center",
 					}}
 				/>
