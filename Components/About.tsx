@@ -25,7 +25,7 @@ const About = () => {
 					</h2>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
 						<div
-							style={{ width: "50px", height: "50px" }}
+							style={{ width: "50px", height: "50px", cursor: "pointer" }}
 							onMouseOver={() => onHover(plusSlate1)}
 							onMouseLeave={() => onLeave(plusSlate1)}
 						>
@@ -41,7 +41,7 @@ const About = () => {
 					</div>
 					<div className="mb-[3rem] flex items-center md:space-x-10">
 						<div
-							style={{ width: "50px", height: "50px" }}
+							style={{ width: "50px", height: "50px", cursor: "pointer" }}
 							onMouseOver={() => onHover(plusSlate2)}
 							onMouseLeave={() => onLeave(plusSlate2)}
 						>
