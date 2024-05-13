@@ -7,7 +7,7 @@ const HeroAvatarLg = () => {
 	const avatarImage1 = `url('/images/MikeFyke-Gen.jpeg')`;
 	const avatarImage2 = `url('/images/mikeFykeAvatar.jpeg')`;
 	const [currentAvatar, setCurrentAvatar] = useState(
-		`url('/images/MikeFyke-Gen.jpeg')`
+		`url('/images/mikeFykeAvatar.jpeg')`
 	);
 
 	const flipAvatarCard = () => {
