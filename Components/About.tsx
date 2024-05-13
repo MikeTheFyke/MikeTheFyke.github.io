@@ -54,7 +54,7 @@ const About = () => {
 							Guidelines can be like a fence around a yard. Some people can feel
 							contained and stay firmly in the middle of the yard, contained by
 							those guidelines. But to truely make the best use of those
-							guidelines somone needs to walk along that fence like a tight
+							guidelines someone needs to walk along that fence like a tight
 							rope.
 						</p>
 					</div>
