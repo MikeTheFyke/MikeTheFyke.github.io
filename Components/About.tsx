@@ -51,10 +51,11 @@ const About = () => {
 							></span>
 						</div>
 						<p className="body-texts text-[#EFEFEF] w-[80%]">
-							Guidlines can be like a fence around a yard. Some people can feel
+							Guidelines can be like a fence around a yard. Some people can feel
 							contained and stay firmly in the middle of the yard, contained by
 							those guidelines. But to truely make the best use of those
-							guidlines somone needs to walk along that fence like a tight rope.
+							guidelines somone needs to walk along that fence like a tight
+							rope.
 						</p>
 					</div>
 				</div>
