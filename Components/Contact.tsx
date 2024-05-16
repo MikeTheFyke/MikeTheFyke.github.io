@@ -14,7 +14,7 @@ const Contact = () => {
 			id="Contact"
 			style={{ backgroundColor: Color.TEXT_GRAY }}
 		>
-			<div className="mx-auto grid pb-[1rem] grid-cols-3 lg:grid-cols-6 md:grid-cols-3 w-[80%] gap-[3rem] place-items-center">
+			<div className="mx-auto grid pb-[1rem] grid-cols-3 lg:grid-cols-5 md:grid-cols-3 w-[80%] gap-[3rem] place-items-center">
 				<div className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
 					<a href="mailto:mikefyke@hotmail.com?subject=Lets%20Talk">
 						<EnvelopeIcon className="w-[3rem] h-[3rem] text-black" />
