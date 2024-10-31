@@ -33,7 +33,7 @@ const Contact = () => {
 
 				<div
 					className="cursor-pointer w-[5rem] h-[5rem] flex items-center justify-center rounded-full  bg-[#FFFFFF] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-					onClick={() => openNewTab("htts://www.github.com/MikeTheFyke")}
+					onClick={() => openNewTab("https://www.github.com/MikeTheFyke")}
 					style={{
 						backgroundImage: `url("/images/GithubAvatar.png")`,
 						backgroundRepeat: "no-repeat",
